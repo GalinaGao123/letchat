@@ -47,18 +47,18 @@ gulp.task('js', next => {
   })
 })
 
-gulp.task('static', () => {
-  return gulp.src('src/static/**/*', { base: 'src' })
+gulp.task('images', () => {
+  return gulp.src('src/images/**/*', { base: 'src' })
               .pipe(gulp.dest('public'))
 })
 
-gulp.task('compile', ['html', 'css', 'js', 'static'])
+gulp.task('compile', ['html', 'css', 'js', 'images'])
 
 gulp.task('watch', () => {
   gulp.watch('src/pug/**/*'   , ['html'])
   gulp.watch('src/less/**/*'  , ['css'])
   gulp.watch('src/js/**/*'    , ['js'])
-  gulp.watch('src/static/**/*', ['static'])
+  gulp.watch('src/images/**/*', ['images'])
 })
 
 gulp.task('server', ['compile', 'watch'], () => {
