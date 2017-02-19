@@ -1,0 +1,24 @@
+{
+  "name": "letchat",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development gulp server",
+    "build": "npm run clean && NODE_ENV=production gulp compile",
+    "clean": "rm -rf public"
+  },
+  "author": "Galina Gao <2901634865@qq.com>",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "^6.22.0",
+    "browser-sync": "^2.18.8",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "pug": "^2.0.0-beta11",
+    "webpack": "^2.2.1"
+  }
+}
