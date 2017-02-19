@@ -1,8 +1,12 @@
 # letchat
-FE
+
+#Begin
 1. git clone git@github.com:guoxiangke/letchat.git
+
 2. git checkout gh-pages
+
 3. Build U project!
+
 4. git push origin gh-pages
 
 #项目预览：
