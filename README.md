@@ -24,4 +24,6 @@ https://github.com/guoxiangke/letchat/issues
 
 4.图片资源需要放在本地images文件夹
 
-5.
+5.需求提交build work和 src.
+
+6.其他情关注看板进度。
