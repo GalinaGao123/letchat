@@ -1,0 +1,66 @@
+header
+  .page-container
+    .nav-box
+      a(href="/", class="brand-logo")
+        img(src="./images/header/logo.svg")
+      nav
+        .nav-link.triangle.active
+          span Products
+          span.nav-arrow
+          .nav-dropdown
+            .row
+              .col-xs-6
+                ul
+                  li.acquire
+                    a(href="")
+                      .title.h5
+                        .icon
+                          img(src="./images/header/acquire.svg")
+                        span Acquire
+                      .dropdown-desc.brief Chat with website visitors, capture leads, and continue conversations by email
+              .col-xs-6
+                a.box.purple(href="#")
+                  .title
+                    img(src="./images/header/search-icon.svg")
+                    span.h5 +
+                    img(src="./images/header/question-icon.svg")
+                  .box-title.h5 Support Solution
+                  .dropdown-desc Provide customer support at scale with an integrated help desk and knowledge base
+                a.box.blue(href="#")
+                  .box-title.h5 All products are built on the Intercom Platform
+                  .dropdown-desc Free Forever
+        .nav-link.triangle
+          | Resource
+          span.nav-arrow
+          .nav-dropdown
+            .row
+              .col-xs-6
+                ul
+                  li.resource
+                    a(href="")
+                      .title.h5 Customers
+                      .dropdown-desc.brief See how customers like InVision are using Intercom
+                  li.resource
+                    a(href="")
+                      .title.h5 Help Center
+                      .dropdown-desc.brief Learn how to install, configure, and use Intercom's products
+                  li.resource
+                    a(href="")
+                      .title.h5 Watch a Demo
+                      .dropdown-desc.brief Learn best practices for using Intercom's products and ask questions
+                  li.resource
+                    a(href="")
+                      .title.h5 Help Center
+                      .dropdown-desc.brief Learn how to install, configure, and use Intercom's products
+              .col-xs-6
+                ul
+                  li.resource
+                    a(href="")
+                      .title.h5 Developers
+                      .dropdown-desc.brief Use our APIs to integrate Intercom with other services
+        a.nav-link(href="#") Login
+      .search-box
+        form.header-form(actions="")
+          input(type="text", name="", placeholder="Enter your emial")
+          button.btn.btn-primary(type="submit") Get Started
+          span.start-info.hidden Thanks! We’ll send you an email to help you get started.

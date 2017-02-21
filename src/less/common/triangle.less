@@ -1,0 +1,10 @@
+.generate-triangle (@width, @color, @direction) when (@direction = 'top') {
+  border-bottom: @width solid @color;
+  border-left: @width solid transparent;
+  border-right: @width solid transparent;
+}
+.generate-triangle (@width, @color, @direction) when (@direction = 'bottom') {
+  border-top: @width solid @color;
+  border-left: @width solid transparent;
+  border-right: @width solid transparent;
+}
