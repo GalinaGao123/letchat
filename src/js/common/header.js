@@ -15,5 +15,10 @@ $(function () {
       }
     )
   })
-  
+
+  $('.mobile-menu').click(function(){
+    $(this).toggleClass('open')
+    $(this).find('.dropdown-menu').slideToggle(200)
+  })
+
 })

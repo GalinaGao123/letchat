@@ -37,6 +37,8 @@
     height: 100%;
     display: flex;
     align-items: center;
+
+    .medium({ display: none; })
   }
 
   .dropdown {
@@ -74,7 +76,7 @@
         width: 10px;
         height: 10px;
         margin-left: -5px;
-        margin-top: -5px;  
+        margin-top: -5px;
         border-top: 1px solid @light-grey;
         border-left: 1px solid @light-grey;
         z-index: 10;
@@ -89,7 +91,7 @@
         margin-left: 5px;
       }
     }
-    
+
 
     &-menu {
       display: none;
@@ -101,6 +103,12 @@
       background-color: white;
       padding: 40px;
       box-sizing: border-box;
+
+      .medium({
+        right: 0;
+        width: 100%;
+        padding: 25px 15px 20px;
+      })
     }
   }
 
@@ -115,6 +123,10 @@
     display: flex;
     width: 280px;
     height: 30px;
+
+    @media (max-width: 910px) {
+      display: none;
+    }
 
     input {
       width: 55%;
@@ -148,6 +160,11 @@
       width: 47%;
     }
 
+    &.mobile-products {
+      display: block;
+      margin: 20px 0;
+    }
+
     .product {
       display: block;
       text-decoration: none;
@@ -169,6 +186,8 @@
 
       .desc {
         font-size: 12px;
+
+        .medium({ margin-bottom: 6px; })
       }
     }
 
@@ -220,6 +239,7 @@
 
     .res {
       display: block;
+      color: @grey;
       width: 45%;
       text-decoration: none;
       margin-bottom: 20px;
@@ -233,7 +253,93 @@
       .desc {
         font-size: 12px;
       }
+
+      .medium({ width: 33.33%; color: @dark-blue; })
+    }
+  }
+
+  .mobile-menu {
+    height: 30px;
+    margin-left: auto;
+    display: none;
+
+    &.open {
+      .menu-btn {
+        border-color: transparent;
+        &:before {
+          top: 0;
+          transform-origin: center center;
+          transform: rotateZ(45deg);
+        }
+
+        &:after {
+          bottom: auto;
+          top: 0;
+          transform-origin: center center;
+          transform: rotateZ(-45deg);
+        }
+      }
+
+      .triangle {
+        height: 10px;
+        width: 10px;
+        border-top: 1px solid @light-grey;
+        border-right: 1px solid @light-grey;
+        position: absolute;
+        z-index: 10;
+        right: 22.5px;
+        top: 100%;
+        margin-top: -5px;
+        transform-origin: center;
+        transform: rotateZ(-45deg);
+        background-color: #fff;
+      }
+    }
+
+    .medium({ display: block; })
+  }
+
+  .menu-btn {
+    width: 25px;
+    border-top: 2px solid @blue;
+    position: relative;
+    display: inline-block;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 100%;
+      border-top: 2px solid @blue;
+      position: absolute;
+
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:after {
+      bottom: -6px;
+    }
+
+  }
+
+  .download-apps {
+    margin: 0 -15px;
+    border-top: 1px solid @light-grey;
+    box-sizing: border-box;
+    padding-top: 20px;
+
+    .desc {font-size: 12px; padding: 0 15px;}
+    .apps {
+      display: flex;
+      margin-top: 20px;
+      padding: 0 15px;
+
+      .app {
+        width: 50%;
+        color: @dark-blue;
+      }
     }
   }
 }
-
