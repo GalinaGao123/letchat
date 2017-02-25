@@ -26,7 +26,10 @@ gulp.task('html', () => {
 
 gulp.task('css', () => {
   return gulp.src('src/less/*.less', { base: 'src/less' })
-              .pipe(plumber())
+              .pipe(plumber(function (err) {
+                console.log(err)
+                this.emit('end')
+              }))
               .pipe(less({
                 plugins: [ autoprefix ],
                 compress: isProd
