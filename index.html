@@ -5,77 +5,136 @@
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <header>
-      <div class="page-container">
-        <div class="nav-box"><a class="brand-logo" href="/"><img src="./images/header/logo.svg"></a>
-          <nav>
-            <div class="nav-link triangle active"><span>Products</span><span class="nav-arrow"></span>
-              <div class="nav-dropdown">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <ul>
-                      <li class="acquire"><a href="">
-                          <div class="title h5">
-                            <div class="icon"><img src="./images/header/acquire.svg"></div><span>Acquire</span>
-                          </div>
-                          <div class="dropdown-desc brief">Chat with website visitors, capture leads, and continue conversations by email</div></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-xs-6"><a class="box purple" href="#">
-                      <div class="title"><img src="./images/header/search-icon.svg"><span class="h5">+</span><img src="./images/header/question-icon.svg"></div>
-                      <div class="box-title h5">Support Solution</div>
-                      <div class="dropdown-desc">Provide customer support at scale with an integrated help desk and knowledge base</div></a><a class="box blue" href="#">
-                      <div class="box-title h5">All products are built on the Intercom Platform</div>
-                      <div class="dropdown-desc">Free Forever</div></a></div>
-                </div>
+    <header class="site-header">
+      <div class="site-header-wrap"><a class="logo" href="/"><img src="./images/header/logo.svg" alt="logo"></a>
+        <div class="right-block">
+          <div class="dropdown">
+            <div class="dropdown-label">Products</div>
+            <div class="dropdown-menu">
+              <div class="products">
+                <div class="products-col"><a class="product" href="#">
+                    <div class="name"><img src="./images/header/acquire.svg" alt="acquire"><span>Acquire</span></div>
+                    <div class="desc">Chat with website visitors, capture leads, and continue conversations by email</div></a></div>
+                <div class="products-col"><a class="link-box" href="#">
+                    <div class="icon-text"><img src="./images/header/search-icon.svg"><span class="purple">+</span><img src="./images/header/question-icon.svg"></div>
+                    <div class="title purple">Support Solution</div>
+                    <div class="desc">Provide customer support at scale with an integrated help desk and knowledge base</div></a><a class="link-box" href="#">
+                    <div class="title blue">All products are built on the Intercom Platform</div>
+                    <div class="desc">Free Forever</div></a></div>
               </div>
             </div>
-            <div class="nav-link triangle">Resource<span class="nav-arrow"></span>
-              <div class="nav-dropdown">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <ul>
-                      <li class="resource"><a href="">
-                          <div class="title h5">Customers</div>
-                          <div class="dropdown-desc brief">See how customers like InVision are using Intercom</div></a></li>
-                      <li class="resource"><a href="">
-                          <div class="title h5">Help Center</div>
-                          <div class="dropdown-desc brief">Learn how to install, configure, and use Intercom's products</div></a></li>
-                      <li class="resource"><a href="">
-                          <div class="title h5">Watch a Demo</div>
-                          <div class="dropdown-desc brief">Learn best practices for using Intercom's products and ask questions</div></a></li>
-                      <li class="resource"><a href="">
-                          <div class="title h5">Help Center</div>
-                          <div class="dropdown-desc brief">Learn how to install, configure, and use Intercom's products</div></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-xs-6">
-                    <ul>
-                      <li class="resource"><a href="">
-                          <div class="title h5">Developers</div>
-                          <div class="dropdown-desc brief">Use our APIs to integrate Intercom with other services</div></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div><a class="nav-link" href="#">Login</a>
-          </nav>
-          <div class="search-box">
-            <form class="header-form" actions="">
-              <input type="text" name="" placeholder="Enter your emial">
-              <button class="btn btn-primary" type="submit">Get Started</button><span class="start-info hidden">Thanks! We’ll send you an email to help you get started.</span>
-            </form>
           </div>
+          <div class="dropdown">
+            <div class="dropdown-label">Resources</div>
+            <div class="dropdown-menu">
+              <div class="resources"><a class="res" href="#">
+                  <div class="title">Customers</div>
+                  <div class="desc">See how customers like InVision are using Intercom</div></a><a class="res" href="#">
+                  <div class="title">Books</div>
+                  <div class="desc">Books on everything from customer support to product management</div></a><a class="res" href="#">
+                  <div class="title">Help Center</div>
+                  <div class="desc">Learn how to install, configure, and use Intercom's products</div></a><a class="res" href="#">
+                  <div class="title">Developers</div>
+                  <div class="desc">Use our APIs to integrate Intercom with other services</div></a><a class="res" href="#">
+                  <div class="title">Watch a Demo</div>
+                  <div class="desc">Learn best practices for using Intercom's products and ask questions</div></a></div>
+            </div>
+          </div><a class="nav-link" href="#">Blog</a><a class="nav-link" href="#">Login</a>
+          <form class="get-started">
+            <input type="text" placeholder="Enter your email">
+            <button type="submit">Get Started</button>
+          </form>
         </div>
       </div>
     </header>
     <div class="wrapper">
-      <div class="home">
-        <h1>This is a test page</h1><img src="./images/index/1.png">
+      <div class="home page-wrap">
+        <div class="content-wrapper">
+          <div class="communication-way">
+            <div class="way"><img src="../images/index/2.png">
+              <h2 class="h2">With Intercom it’s simple, personal, and fun for everyone.</h2>
+              <div class="form-box">
+                <form class="home-form" actions="">
+                  <input type="text" name="" placeholder="Enter your emial">
+                  <button class="btn btn-primary" type="submit">Get Started</button><span>Easy setup &bullet; Try any products free for 14 days & bullet; Cancel at any time</span>
+                </form>
+              </div>
+            </div>
+            <div class="way">
+              <h2 class="h2">Communicating with customers shouldn't be this hard.</h2><img src="../images/index/1.png">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <footer>
+      <div class="content-wrapper">
+        <div class="footer-links">
+          <div class="links">
+            <div class="link-title">PRODUCTS</div>
+            <ul>
+              <li><a href="#">Website Live Chat</a></li>
+              <li><a href="#">Customer Engagement</a></li>
+              <li><a href="#">Customer Support</a></li>
+              <div class="separate-line"></div>
+              <li><a href="#">View Pricing</a></li>
+              <li><a href="#">Intercom for Early Stage</a></li>
+              <li><a href="#">Intercom Platform<span class="footer-new">FREE</span></a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="link-title">FEATURES</div>
+            <ul>
+              <li><a href="#">In-App Messaging</a></li>
+              <li><a href="#">Team Inbox</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">Intercom for Mobile</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">iOS & Android Apps</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="link-title">RESOURCES</div>
+            <ul>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="link-title">COMPANY</div>
+            <ul>
+              <li><a href="#;">About</a></li>
+              <li><a href="#;">Customers</a></li>
+              <li><a href="#;">Careers</a></li>
+              <li><a href="#;">Press Resources</a></li>
+              <li><a href="#;">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="link-title">FROM THE BLOG</div>
+            <div class="separate-line"></div>
+            <ul>
+              <li><a href="#">Why sales and support should be friends, not foes</a></li>
+              <li><a href="#">Scott Belsky on the importance of your product’s first mile</a></li>
+              <li><a href="#">Slack’s Judy Watkins on improving customer support as you grow</a></li>
+            </ul>
+            <div class="read-more"><a href="#">Read More →</a></div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="copyright-links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">team@intercom.com</a></div>
+          <div class="share-links"><a href="#"><img src="../images/footer/facebook.svg"></a><a href="#"><img src="../images/footer/twitter.svg"></a><a href="#"><img src="../images/footer/linkedin.svg"></a></div>
+        </div>
+        <div class="brand"><img src="../images/footer/brand.svg"></div>
+      </div>
+    </footer>
     <script src="./js/common.js"></script>
   </body>
 </html>
