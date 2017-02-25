@@ -1,98 +1,50 @@
-header
-  .page-container
-    .nav-box
-      a(href="/", class="brand-logo")
-        img(src="./images/header/logo.svg")
-      .menu-btn
-        span.line
-        span.nav-arrow
-        .nav-dropdown.mobile-menu
-          .row
-            .col-xs-6
-              .link-box.acquire
-                .dropdown-desc Website Live Chat
-                .title.h5
-                  .icon
-                    img(src="./images/header/acquire.svg")
+header.site-header
+  .site-header-wrap
+    a.logo(href='/')
+      img(src='./images/header/logo.svg', alt='logo')
+    .right-block
+      .dropdown
+        .dropdown-label Products
+        .dropdown-menu
+          .products
+            .products-col
+              a.product(href='#')
+                .name
+                  img(src='./images/header/acquire.svg', alt='acquire')
                   span Acquire
-          a.box.purple(href="#")
-            .title
-              img(src="./images/header/search-icon.svg")
-              span.h5 +
-              img(src="./images/header/question-icon.svg")
-              span.h5 Support Solution
-            .dropdown-desc Provide customer support at scale with an integrated help desk and knowledge base
-          .grid-links
-            a(href="#") Pricing
-            a(href="#") Customers
-            a(href="#") Watch a Demo
-            a(href="#") Developers
-            a(href="#") Help Center
-            a(href="#") Careers
-          .download.row
-            .dropdown-desc Download Intercom's mobile apps
-            .row
-              .col-xs-6.app iOS App
-              .col-xs-6.app Android App
-      nav
-        .nav-link.dropdown
-          .triangle
-            span Products
-            span.nav-arrow
-          .nav-dropdown
-            .row
-              .col-xs-6
-                .link-box.acquire
-                  a(href="")
-                    .title.h5
-                      .icon
-                        img(src="./images/header/acquire.svg")
-                      span Acquire
-                    .dropdown-desc.brief Chat with website visitors, capture leads, and continue conversations by email
-              .col-xs-6
-                a.box.purple(href="#")
-                  .title
-                    img(src="./images/header/search-icon.svg")
-                    span.h5 +
-                    img(src="./images/header/question-icon.svg")
-                  .box-title.h5 Support Solution
-                  .dropdown-desc Provide customer support at scale with an integrated help desk and knowledge base
-                a.box.blue(href="#")
-                  .box-title.h5 All products are built on the Intercom Platform
-                  .dropdown-desc Free Forever
-        .nav-link.dropdown
-          .triangle
-            span Resource
-            span.nav-arrow
-          .nav-dropdown
-            .row.resource
-              .col-xs-6
-                ul
-                  li
-                    a(href="")
-                      .title.h5 Customers
-                      .dropdown-desc.brief See how customers like InVision are using Intercom
-                  li
-                    a(href="")
-                      .title.h5 Help Center
-                      .dropdown-desc.brief Learn how to install, configure, and use Intercom's products
-                  li
-                    a(href="")
-                      .title.h5 Watch a Demo
-                      .dropdown-desc.brief Learn best practices for using Intercom's products and ask questions
-                  li
-                    a(href="")
-                      .title.h5 Help Center
-                      .dropdown-desc.brief Learn how to install, configure, and use Intercom's products
-              .col-xs-6
-                ul
-                  li
-                    a(href="")
-                      .title.h5 Developers
-                      .dropdown-desc.brief Use our APIs to integrate Intercom with other services
-        a.nav-link(href="#") Login
-      .search-box
-        form.header-form(actions="")
-          input(type="text", name="", placeholder="Enter your emial")
-          button.btn.btn-primary(type="submit") Get Started
-          span.start-info.hidden Thanks! We’ll send you an email to help you get started.
+                .desc Chat with website visitors, capture leads, and continue conversations by email
+            .products-col
+              a.link-box(href='#')
+                .icon-text
+                  img(src='./images/header/search-icon.svg')
+                  span.purple +
+                  img(src='./images/header/question-icon.svg')
+                .title.purple Support Solution
+                .desc Provide customer support at scale with an integrated help desk and knowledge base
+              a.link-box(href='#')
+                .title.blue All products are built on the Intercom Platform
+                .desc Free Forever
+      .dropdown
+        .dropdown-label Resources
+        .dropdown-menu
+          .resources
+            a.res(href='#')
+              .title Customers
+              .desc See how customers like InVision are using Intercom
+            a.res(href='#')
+              .title Books
+              .desc Books on everything from customer support to product management
+            a.res(href='#')
+              .title Help Center
+              .desc Learn how to install, configure, and use Intercom's products
+            a.res(href='#')
+              .title Developers
+              .desc Use our APIs to integrate Intercom with other services
+            a.res(href='#')
+              .title Watch a Demo
+              .desc Learn best practices for using Intercom's products and ask questions
+      a.nav-link(href='#') Blog
+      a.nav-link(href='#') Login
+      form.get-started
+        input(type='text', placeholder='Enter your email')
+        button(type='submit') Get Started

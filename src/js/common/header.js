@@ -1,17 +1,19 @@
 import $ from 'jquery'
 
-$(function(){
-  $('header .dropdown').each(function(index){
-    $(this).hover(function(){
-      $(this).find('.triangle').addClass('active')
-      $(this).find('.nav-dropdown').slideDown(300)
-    }, function(){
-      $(this).find('.nav-dropdown').slideUp(300)
-      $(this).find('.triangle').removeClass('active')
-    })
+$(function () {
+
+  $('.site-header .dropdown').each(function() {
+    const $dropdown = $(this)
+    const $menu = $dropdown.find('.dropdown-menu')
+
+    $dropdown.hover(
+      function () {
+        $menu.slideDown(200)
+      },
+      function () {
+        $menu.hide()
+      }
+    )
   })
-  $('.menu-btn').click(function(){
-    $(this).toggleClass('open');
-    $(this).find('.nav-dropdown.mobile-menu').slideToggle(300)
-  });
+  
 })
