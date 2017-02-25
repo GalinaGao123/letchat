@@ -102,7 +102,10 @@ function getWebpackConfig(files) {
     },
 
     resolve: {
-      modules: [ path.resolve(__dirname, 'src/js') ],
+      modules: [
+        path.resolve(__dirname, 'src/js'),
+        'node_modules'
+      ],
       extensions: ['.js']
     }
   }

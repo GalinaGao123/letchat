@@ -1,6 +1,19 @@
 extends common/layout.pug
 
+block css
+  link(rel='stylesheet', href='./css/index.css')
 block content
-  .home
-    h1 This is a test page
-    img(src="./images/index/1.png")
+  .home.page-wrap
+    .content-wrapper
+      .communication-way
+        .way
+          img(src="../images/index/2.png")
+          h2.h2 With Intercom it’s simple, personal, and fun for everyone.
+          .form-box
+            form.home-form(actions="")
+              input(type="text", name="", placeholder="Enter your emial")
+              button.btn.btn-primary(type="submit") Get Started
+              span Easy setup &bullet; Try any products free for 14 days & bullet; Cancel at any time
+        .way
+          h2.h2 Communicating with customers shouldn't be this hard.
+          img(src="../images/index/1.png")
