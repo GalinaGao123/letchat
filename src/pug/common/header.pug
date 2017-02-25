@@ -2,6 +2,37 @@ header.site-header
   .site-header-wrap
     a.logo(href='/')
       img(src='./images/header/logo.svg', alt='logo')
+    .mobile-menu
+      .menu-btn
+      .triangle
+      .dropdown-menu
+        .products
+          .products-col
+            a.product(href='#')
+              .desc Website Live Chat
+              .name
+                img(src='./images/header/acquire.svg', alt='acquire')
+                span Acquire
+        .products.mobile-products
+          a.link-box(href='#')
+            .icon-text
+              img(src='./images/header/search-icon.svg')
+              span.purple +
+              img(src='./images/header/question-icon.svg')
+              span.purple.h5 Support Solution
+            .desc Provide customer support at scale with an integrated help desk and knowledge base
+        .resources
+          a.res(href='#') Pricing
+          a.res(href='#') Customers
+          a.res(href='#') Watch a Demo
+          a.res(href='#') Developers
+          a.res(href='#') Help Center
+          a.res(href='#') Careers
+        .download-apps
+          .desc Download Intercom's mobile apps
+          .apps
+            .app iOS App
+            .app Android App
     .right-block
       .dropdown
         .dropdown-label Products
@@ -32,9 +63,6 @@ header.site-header
               .title Customers
               .desc See how customers like InVision are using Intercom
             a.res(href='#')
-              .title Books
-              .desc Books on everything from customer support to product management
-            a.res(href='#')
               .title Help Center
               .desc Learn how to install, configure, and use Intercom's products
             a.res(href='#')
@@ -43,7 +71,6 @@ header.site-header
             a.res(href='#')
               .title Watch a Demo
               .desc Learn best practices for using Intercom's products and ask questions
-      a.nav-link(href='#') Blog
       a.nav-link(href='#') Login
       form.get-started
         input(type='text', placeholder='Enter your email')
