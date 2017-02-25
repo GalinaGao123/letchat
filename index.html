@@ -10,6 +10,28 @@
   <body>
     <header class="site-header">
       <div class="site-header-wrap"><a class="logo" href="/"><img src="./images/header/logo.svg" alt="logo"></a>
+        <div class="mobile-menu">
+          <div class="menu-btn"></div>
+          <div class="triangle"></div>
+          <div class="dropdown-menu">
+            <div class="products">
+              <div class="products-col"><a class="product" href="#">
+                  <div class="desc">Website Live Chat</div>
+                  <div class="name"><img src="./images/header/acquire.svg" alt="acquire"><span>Acquire</span></div></a></div>
+            </div>
+            <div class="products mobile-products"><a class="link-box" href="#">
+                <div class="icon-text"><img src="./images/header/search-icon.svg"><span class="purple">+</span><img src="./images/header/question-icon.svg"><span class="purple h5">Support Solution</span></div>
+                <div class="desc">Provide customer support at scale with an integrated help desk and knowledge base</div></a></div>
+            <div class="resources"><a class="res" href="#">Pricing</a><a class="res" href="#">Customers</a><a class="res" href="#">Watch a Demo</a><a class="res" href="#">Developers</a><a class="res" href="#">Help Center</a><a class="res" href="#">Careers</a></div>
+            <div class="download-apps">
+              <div class="desc">Download Intercom's mobile apps</div>
+              <div class="apps">
+                <div class="app">iOS App</div>
+                <div class="app">Android App</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="right-block">
           <div class="dropdown">
             <div class="dropdown-label">Products</div>
@@ -33,8 +55,6 @@
               <div class="resources"><a class="res" href="#">
                   <div class="title">Customers</div>
                   <div class="desc">See how customers like InVision are using Intercom</div></a><a class="res" href="#">
-                  <div class="title">Books</div>
-                  <div class="desc">Books on everything from customer support to product management</div></a><a class="res" href="#">
                   <div class="title">Help Center</div>
                   <div class="desc">Learn how to install, configure, and use Intercom's products</div></a><a class="res" href="#">
                   <div class="title">Developers</div>
@@ -42,7 +62,7 @@
                   <div class="title">Watch a Demo</div>
                   <div class="desc">Learn best practices for using Intercom's products and ask questions</div></a></div>
             </div>
-          </div><a class="nav-link" href="#">Blog</a><a class="nav-link" href="#">Login</a>
+          </div><a class="nav-link" href="#">Login</a>
           <form class="get-started">
             <input type="text" placeholder="Enter your email">
             <button type="submit">Get Started</button>
@@ -51,20 +71,101 @@
       </div>
     </header>
     <div class="wrapper">
-      <div class="home page-wrap">
+      <div class="home">
+        <div class="bg-box">
+          <div class="left-bg"></div>
+          <div class="right-bg"></div>
+        </div>
         <div class="content-wrapper">
           <div class="communication-way">
-            <div class="way"><img src="../images/index/2.png">
+            <div class="way new-way"><img src="./images/index/2.png">
               <h2 class="h2">With Intercom it’s simple, personal, and fun for everyone.</h2>
-              <div class="form-box">
-                <form class="home-form" actions="">
+              <form actions="">
+                <div class="clearfix home-form">
                   <input type="text" name="" placeholder="Enter your emial">
-                  <button class="btn btn-primary" type="submit">Get Started</button><span>Easy setup &bullet; Try any products free for 14 days & bullet; Cancel at any time</span>
-                </form>
+                  <button class="btn btn-primary" type="submit">Get Started</button>
+                </div>
+              </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span>
+            </div>
+            <div class="way old-way">
+              <h1 class="h2">Communicating with customers shouldn't be this hard.</h1><img src="./images/index/1.png">
+            </div>
+          </div>
+          <div class="products">
+            <h1 class="h1">Meet our products</h1>
+            <div class="info h5">We make customer messaging products for sales, marketing, and support teams, connected on one platform.</div>
+            <div class="row">
+              <div class="col-xs-6"><a class="title acquire" href="#"><img src="./images/header/acquire.svg"><span class="h2">Acquire</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/3.jpg"><img class="mouse-in" src="./images/index/4.jpg"></a>
+                <div class="detail">
+                  <h3 class="h3">Website live chat</h3>
+                  <p>Chat with website visitors in real-time, capture leads, and continue conversations by email.</p>
+                  <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                </div>
+              </div>
+              <div class="col-xs-6"><a class="title engage" href="#"><img src="./images/header/engage.svg"><span class="h2">Engage</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/5.jpg"><img class="mouse-in" src="./images/index/6.jpg"></a>
+                <div class="detail">
+                  <h3 class="h3">Customer engagement</h3>
+                  <p>Send targeted messages to onboard users, make announcements, and re-engage people.</p>
+                  <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                </div>
               </div>
             </div>
-            <div class="way">
-              <h2 class="h2">Communicating with customers shouldn't be this hard.</h2><img src="../images/index/1.png">
+          </div>
+          <div class="customer">
+            <h1 class="h2">Provide personal customer support at scale</h1>
+            <div class="info h5">Everything your team needs to solve customer problems faster with an integrated knowledge base and help desk.</div><a class="btn btn-primary" href="#">Learn More</a>
+            <div class="row">
+              <div class="col-xs-6"><a class="title educate" href="#"><img src="./images/header/search-icon.svg"><span class="h2 educate">Educate</span></a></div>
+              <div class="col-xs-6"><a class="title resolve" href="#"><img src="./images/header/question-icon.svg"><span class="h2">Resolve</span></a></div>
+            </div>
+            <div class="row customer-img">
+              <div class="col-xs-12"><a href="#"><img class="mouse-out" src="./images/index/8.jpg"><img class="mouse-in" src="./images/index/7.jpg"></a></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="detail">
+                  <h3 class="h3">Knowledge base</h3>
+                  <p>Let customers help themselves with a knowledge base that constantly improves.</p>
+                  <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="detail">
+                  <h3 class="h3">Help desk</h3>
+                  <p class="resolve-para">Manage customer requests for help across all channels and respond faster with a modern help desk.</p>
+                  <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="platform">
+            <div class="row">
+              <div class="platform-brief">
+                <h2 class="h1">The Intercom Platform</h2>
+                <div class="info">All of our products work together in one place, powered by live customer data.</div>
+              </div>
+              <div class="platform-img"><img src="./images/index/9.png">
+                <div class="text-box">
+                  <div class="text">See who your customers are<br> and what they do in your app, for free.</div>
+                  <div class="more-box"><a class="btn" href="#">Learn More</a><span>FREE FOREVER</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="free-trial">
+          <div class="trial-form">
+            <h2 class="h1">Start Your Free Trial</h2>
+            <form actions="">
+              <div class="clearfix home-form">
+                <input type="text" name="" placeholder="Enter your emial">
+                <button class="btn btn-primary" type="submit">Get Started</button>
+              </div>
+            </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span>
+            <div class="early">
+              <h3 class="h3">Early stage company?</h3>
+              <p>Apply to get all of our products for just $49 a month</p>
+              <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
             </div>
           </div>
         </div>
@@ -130,9 +231,22 @@
         </div>
         <div class="copyright">
           <div class="copyright-links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">team@intercom.com</a></div>
-          <div class="share-links"><a href="#"><img src="../images/footer/facebook.svg"></a><a href="#"><img src="../images/footer/twitter.svg"></a><a href="#"><img src="../images/footer/linkedin.svg"></a></div>
+          <div class="share-links"><a href="#">
+              <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Flat_copy">
+                  <path fill="#1f8ded" d="M11.848,32h6.612V15.998h4.411l0.584-5.514H18.46l0.007-2.761c0-1.437,0.137-2.209,2.2-2.209h2.757V0h-4.412   c-5.299,0-7.164,2.675-7.164,7.174v3.311H8.545v5.515h3.303V32z"></path>
+                </g>
+              </svg></a><a href="#">
+              <svg enable-background="new 0 0 32 32" height="32px" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63  c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563  c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3  c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082  c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117  c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092  C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85  C30,8.55,31.112,7.395,31.993,6.077z" fill="#1f8ded"></path>
+              </svg></a><a href="#">
+              <svg enable-background="new 0 0 32 32" height="32px" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect fill="#1f8ded" height="23" width="7" y="9"></rect>
+                <path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z" fill="#1f8ded"></path>
+                <circle cx="3.5" cy="3.5" fill="#1f8ded" r="3.5"></circle>
+              </svg></a></div>
         </div>
-        <div class="brand"><img src="../images/footer/brand.svg"></div>
+        <div class="brand"><img src="./images/footer/brand.svg"></div>
       </div>
     </footer>
     <script src="./js/common.js"></script>
