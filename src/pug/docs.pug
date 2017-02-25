@@ -1,0 +1,17 @@
+extends common/doc-layout.pug
+
+block main
+  header.docs-header
+    .header-container
+      a.logo(href='#')
+        img(src='./images/doc/logo.png')
+      .headline Advice and answers from the Intercom Team
+      form.search
+        input(type='text', autocomplete='off', placeholder='Search for answers...')
+        button(type='submit')
+  
+  section.docs-list
+    .container
+      a.doc-card(href='#')
+        img.icon(src='./images/doc/doc-1.svg')
+        
