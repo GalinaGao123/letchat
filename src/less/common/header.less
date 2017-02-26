@@ -158,6 +158,15 @@
     justify-content: space-between;
     .products-col {
       width: 47%;
+      &:hover {
+        .product {
+          opacity: 0.5;
+        }
+        .link-box {
+          opacity: 0.5
+        }
+      }
+      .product:hover, .link-box:hover { opacity: 1; }
     }
 
     &.mobile-products {
@@ -237,12 +246,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    &:hover {
+      .res {
+        opacity: 0.5;
+      }
+    }
+
     .res {
       display: block;
       color: @grey;
       width: 45%;
       text-decoration: none;
       margin-bottom: 20px;
+
+      &:hover {
+        opacity: 1;
+      }
 
       .title {
         font-size: 20px;

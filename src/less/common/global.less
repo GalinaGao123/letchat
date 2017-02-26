@@ -2,6 +2,15 @@
   display: none;
 }
 
+.visible-xs {
+  display: none;
+  .medium({ display: block; })
+}
+
+.hidden-xs {
+  .medium({ display: none; })
+}
+
 .wrapper {
   margin-top: 140px;
 }
@@ -36,7 +45,6 @@ ul, p {
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 input:focus,
@@ -61,15 +69,20 @@ body {
 .h1 {
   font-size: 40px;
   line-height: 52px;
+  .tablet({ font-size: 36px; });
+  .medium({ font-size: 34px; });
 }
 .h2 {
   font-size: 30px;
+  .tablet({ font-size: 27px; });
+  .medium({ font-size: 25px; });
 }
 .h3 {
   font-size: 26px;
 }
 .h5 {
   font-size: 20px;
+  .medium({ font-size: 18px; })
 }
 
 .btn {
