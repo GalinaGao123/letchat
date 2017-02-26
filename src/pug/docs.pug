@@ -12,6 +12,22 @@ block main
   
   section.docs-list
     .container
-      a.doc-card(href='#')
-        img.icon(src='./images/doc/doc-1.svg')
-        
+      - var n = 0
+      while n++ < 17
+        a.doc-card(href='#')
+          .icon
+            img(src=`./images/doc/doc-${n}.svg`)
+          .content-area
+            .title Install on your product or site
+            .desc Easy steps to setting up Intercom on any platform.
+            .info
+              .avatar
+                img(src='./images/doc/person-1.jpg')
+                img(src='./images/doc/person-2.png')
+              .text
+                span.dark 11 articles in this collection
+                br
+                | Written by
+                span.dark  Zara Burke
+                |  and
+                span.dark  Ruairí Galavan
