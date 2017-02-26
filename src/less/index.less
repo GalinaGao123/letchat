@@ -1,3 +1,7 @@
+@import './common/variable.less';
+@import './common/triangle.less';
+@import './common/media.less';
+
 .home {
   .content-wrapper {
     position: relative;
@@ -56,9 +60,7 @@
       &.new-way {
         box-sizing: border-box;
         padding-left: 120px;
-        @media (max-width: 1024px) {
-          padding-left: 40px;
-        }
+        .tablet({padding-left: 40px;});
 
         .medium({
           padding: 0 0 65px;

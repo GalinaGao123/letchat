@@ -1,3 +1,6 @@
+@import 'common/normalize.less';
+@import 'common/media.less';
+
 html, body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -8,10 +11,15 @@ html, body {
   background: #f3f5f7;
 }
 
-.container {
-  width: 100%;
-  max-width: 900px;
+.doc-container {
+  box-sizing: border-box;
+  padding: 0 40px;
+  max-width: 980px;
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    padding: 0 20px;
+  }
 }
 
 .footer {
@@ -19,7 +27,7 @@ html, body {
   color: #a3abb5;
   padding: 40px 0;
 
-  .container {
+  .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,19 +60,15 @@ html, body {
 }
 
 .docs-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url('../images/doc/header-bg.png');
   background-position: 50%;
   background-size: cover;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
   min-height: 260px;
-
+  padding: 35px 0;
   .header-container {
-    width: 100%;
-    max-width: 900px;
     display: flex;
+    height: 100%;
     flex-direction: column;
   }
 
@@ -76,7 +80,7 @@ html, body {
 
   .headline {
     font-size: 28px;
-    font-weight: 300px;
+    font-weight: 300;
     color: white;
     margin-bottom: 20px;
   }
@@ -174,6 +178,10 @@ html, body {
     margin-bottom: 16px;
     &:last-child { margin-bottom: 0; }
 
+    @media (max-width: 400px) {
+      display: block;
+    }
+
     .icon {
       display: flex;
       justify-content: center;
@@ -184,6 +192,19 @@ html, body {
         width: 48px;
         height: 48px;
       }
+
+      .tablet(
+        {
+          display: block;
+          box-sizing: border-box;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+          }
+        }
+      );
     }
 
     .content-area {
@@ -231,7 +252,17 @@ html, body {
               opacity: .4;
               margin-left: -5px;
             }
+
           }
+          .tablet(
+            {
+              width: 42px;
+              display: block;
+              img:nth-child(n+2) {
+                display: none
+              }
+            }
+          );
         }
 
         .text {

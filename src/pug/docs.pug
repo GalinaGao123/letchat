@@ -2,16 +2,17 @@ extends common/doc-layout.pug
 
 block main
   header.docs-header
-    .header-container
-      a.logo(href='#')
-        img(src='./images/doc/logo.png')
-      .headline Advice and answers from the Intercom Team
-      form.search
-        input(type='text', autocomplete='off', placeholder='Search for answers...')
-        button(type='submit')
-  
+    .doc-container
+      .header-container
+        a.logo(href='#')
+          img(src='./images/doc/logo.png')
+        .headline Advice and answers from the Intercom Team
+        form.search
+          input(type='text', autocomplete='off', placeholder='Search for answers...')
+          button(type='submit')
+
   section.docs-list
-    .container
+    .doc-container
       - var n = 0
       while n++ < 17
         a.doc-card(href='#')
