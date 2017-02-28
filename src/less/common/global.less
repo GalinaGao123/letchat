@@ -106,3 +106,40 @@ body {
     background: linear-gradient(to bottom, #1280e0 0%, #0675d6 100%);
   }
 }
+
+.home-form {
+  display: flex;
+  max-width: 470px;
+  margin: 0 auto;
+  input {
+    width: 60%;
+    padding: 16px 15px 14px;
+    border: 1px solid @light-grey;
+    line-height: normal;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .btn-primary {
+    width: 40%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  @media (max-width: 580px) {
+    display: block;
+    padding: 0 20px;
+    width: 100%;
+    max-width: none;
+    input {
+      width: 100%;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .btn-primary {
+      width: 100%;
+      margin-top: 14px;
+      padding: 14px 0;
+      border-radius: 6px;
+    }
+  }
+}

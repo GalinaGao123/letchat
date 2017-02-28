@@ -1,0 +1,17 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/live-chat.css")
+
+block content
+  .live-chat
+    .banner
+      img(src="./images/live-chat/banner.jpg")
+      .banner-text
+        .banner-desc The Intercom Product for Live Chat
+        h1.h1 Every website visitor is a sales opportunity. Chat and convert them to customers.
+        form(actions="")
+          .clearfix.home-form
+            input(type="text", name="", placeholder="Enter your emial")
+            button.btn.btn-primary(type="submit") Get Started
+        .video-btn WATCH THE VIDEO
