@@ -22,13 +22,27 @@
   padding: 0 20px;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
 ul, p {
   margin: 0;
   padding: 0;
+}
+
+.quote {
+  position: relative;
+  &:before {
+    content: '"';
+    position: absolute;
+    left: -9px;
+  }
+  &:after {
+    content: '"';
+    position: absolute;
+    margin-left: 2px;
+  }
 }
 
 .more {
@@ -76,6 +90,8 @@ body {
 .h1 {
   font-size: 40px;
   font-weight: 300;
+  color: @blue;
+  letter-spacing: 0.015em;
   line-height: 52px;
   .tablet({ font-size: 36px; });
   .medium({ font-size: 34px; });
@@ -87,10 +103,23 @@ body {
 }
 .h3 {
   font-size: 26px;
+  font-weight: 300;
 }
 .h5 {
   font-size: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+  font-weight: 300;
   .medium({ font-size: 18px; })
+}
+
+.h4 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: .01em;
+  margin: 0 auto 20px;
+  color: #96a2b0;
 }
 
 .h6 {

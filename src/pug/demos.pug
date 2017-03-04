@@ -1,0 +1,97 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/demos.css")
+
+block content
+  .demos 
+    .banner
+      .banner-text
+        h1.h1 Learn how to use Intercom from the people who build it
+        .banner-desc.h5 Our demos focus on the jobs Intercom will do for you. They’re short and to the point, featuring best practices to help you work better.
+      .banner-img
+        .banner-bg
+        img(src="./images/demos/hero.png")
+    .demos-grid 
+      .demo 
+        a.demo-detail(href="#")
+          h2.h4 Engage customers
+          .demo-play watch the video
+          .demo-desc Onboard new users to become fully-engaged, active customers
+          .demo-show.h5 We’ll show you:
+          ul 
+            li What messages to send
+            li Tips for targeting the right users
+            li How to create message campaigns
+          .demo-tag 
+            include ../images/header/engage.svg
+            span.yellow Engage
+      .demo
+        a.demo-detail(href="#")
+          h2.h4 Educate customers
+          .demo-play watch the video
+          .demo-desc Create a public knowledge base where customers can help themselves
+          .demo-show.h5 We’ll show you how to:
+          ul 
+            li Create effective help content
+            li Customize your public help center
+            li Share articles in conversations
+          .demo-tag 
+            include ../images/header/search-icon.svg
+            span.purple Educate
+      .demo
+        a.demo-detail(href="#")
+          h2.h4 Support customers
+          .demo-play watch the video
+          .demo-desc Help customers as a team via in-app chat, email, and social
+          .demo-show.h5 We’ll show you:
+          ul 
+            li How your customers can contact you
+            li Tips for managing conversations
+            li How to organize product feedback
+          .demo-tag 
+            include ../images/header/question-icon.svg
+            span.purple Resolve
+      .demo
+        a.demo-detail(href="#")
+          h2.h4 Acquire customers
+          .demo-play watch the video
+          .demo-desc Chat with website visitors, capture leads, and continue  by email
+          .demo-show.h5 We’ll show you:
+          ul 
+            li How visitors can contact you
+            li How to chat with visitors
+            li Conversation best practices
+          .demo-tag 
+            include ../images/header/acquire.svg
+            span.red Acquire
+      .demo
+        a.demo-detail(href="#")
+          h2.h4 Get product feedback
+          .demo-play watch the video
+          .demo-desc Get quality product feedback from the right customers
+          .demo-show.h5 We’ll show you:
+          ul 
+            li Why quality research matters
+            li How to automate your research
+            li How to get feedback on features
+          .demo-tag 
+            include ../images/header/engage.svg
+            span.yellow Engage
+      .demo
+        a.demo-detail(href="#")
+          h2.h4 The Intercom Platform
+          .demo-play watch the video
+          .demo-desc See who your customers are and what they do in your app
+          .demo-show.h5 We’ll show you how to:
+          ul 
+            li See who your users are
+            li See what your users do
+            li Segment your users
+          .demo-tag
+            .h24
+    .more
+      | Want to learn more?
+      a(href="#") Check out our Help Center
+      span  &nbsp;→
+

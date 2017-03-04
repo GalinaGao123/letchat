@@ -131,13 +131,306 @@
     background: url(../images/live-chat/circle.jpg) no-repeat center top;
     background-size: 2455px;
     @media (max-width: 1400px)  {
+      background-image: url(../images/live-chat/circle-small.jpg);
       background-size: 1400px;
     }
   }
   .overview {
     text-align: center;
+    margin-top: 60px;
+
     .welcome {
-      margin-top: 110px;
+      margin-top: 50px;
+    }
+
+    .browser {
+      display: inline-block;
+      border: 1px solid @light-grey;
+      box-sizing: border-box;
+      padding-top: 22px;
+      border-radius: 5px 5px 0 0;
+      background: #e9edf0 url(../images/live-chat/browser.svg) no-repeat 7px 7px;
+      image, video, svg {
+        box-shadow: 0 0 0 1px #dbe0e3;
+      }
+    }
+
+    h2 {
+      margin: 30px auto 0;
+    }
+    .overview-desc {
+      margin: 17px auto 60px;
+    }
+
+    .welcome-items {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+      img {
+        display: block;
+      }
+    }
+    .img-left {
+      position: absolute;
+      width: 540px;
+      height: 441px;
+      position: absolute;
+      left: -290px;
+      bottom: 80px;
+    }
+    .img-right {
+      width: 331px;
+      height: 317px;
+      position: absolute;
+      z-index: -1;
+      right: -200px;
+      top: -180px;
+    }
+    .item-pc {
+      position: relative;
+      width: 878px;
+      z-index: 10;
+      display: none;
+      video {
+        display: block;
+      }
+    }
+
+    .item-mobile {
+      position: relative;
+      width: 260px;
+      margin: 0 auto;
+      z-index: 10;
+      padding: 55px 5px 63px;
+      box-sizing: border-box;
+      background: url(../images/live-chat/iphone.png) repeat 50% 0;
+      background-size: 100% 100%;
+      img, video {
+        border: 1px solid @light-grey;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .control-bar {
+      max-width: 75px;
+      margin: 20px auto 0;
+      text-align: center;
+      .pc, .mobile {
+        box-sizing: border-box;
+        padding: 5px;
+        display: inline-block;
+        svg {
+          height: 17px;
+          vertical-align: middle;
+        }
+        &.active {
+          background: #f2f5f7;
+          box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.05);
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .target-video {
+      display: inline-block;
+      position: relative;
+      video {
+        display: block;
+      }
+    }
+
+    .filter {
+      box-sizing: border-box;
+      padding-left: 10%;
+      text-align: left;
+
+      &-text {
+        margin: 42px 0 25px;
+        max-width: 260px;
+        font-size: 14px;
+      }
+
+
+      .line-horizen {
+        margin-top: 30px;
+        background: url(../images/live-chat/line.svg) repeat-x center top;
+        width: 310px;
+        height: 4px;
+        background-size: 100px 3px;
+        position: relative;
+
+        &:before, &:after {
+          content: ' ';
+          overflow: hidden;
+          background: url(../images/live-chat/line.svg) repeat-x center top;
+          background-size: 100px 3px;
+          height: 100%;
+          transform-origin: 100% 0;
+          position: absolute;
+          width: 15px;
+          right: 0;
+        }
+
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+          right: -1px;
+        }
+      }
+    }
+    .collaborate {
+      width: 1450px;
+      max-width: 100%;
+    }
+    .collaborate-items {
+      display: inline-block;
+      margin: 0 auto;
+      position: relative;
+
+      .col-pc {
+        position: relative;
+        display: none;
+        img {
+          display: block;
+        }
+      }
+      .left-bg {
+        width: 790px;
+        height: 390px;
+        background: url(../images/live-chat/fadeout.jpg) no-repeat center top;
+        z-index: -1;
+        background-size: 790px;
+        position: absolute;
+        right: 50%;
+        bottom: 50px;
+        margin-right: 100px;
+        @media (max-width: 1350px) {
+          width: 700px;
+          height: 300px;
+        }
+        img {
+          width: 176px;
+          height: 141px;
+          position: absolute;
+          bottom: 3px;
+          left: 30%;
+        }
+      }
+    }
+
+    .collaborate-detail {
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 260px;
+    }
+    .item-aside {
+      margin-top: 120px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-top: 30px;
+      max-width: 220px;
+      text-align: left;
+      font-size: 14px;
+
+      .aside-title {
+        color: @grey;
+        margin-bottom: 20px;
+      }
+
+      .aside-desc {
+        color: @blue;
+        font-size: 18px;
+        a {
+          color: inherit;
+        }
+      }
+
+      &:before {
+        content : ' ';
+        display: block;
+        overflow: hidden;
+        height: 4px;
+        background: url(../images/live-chat/line.svg) repeat-x center top;
+        background-size: 100px 3px;
+        width: 220px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .blog {
+        position: absolute;
+        top: -69px;
+      }
+    }
+
+    .follow-up {
+      box-sizing: border-box;
+      padding: 60px 20px;
+      background: url(../images/live-chat/green-cat.jpg) no-repeat -550px 300px;
+      background-size: 1550px;
+      @media (max-width: 1350px) {
+        background-position: -350px 300px;
+      }
+    }
+
+    .unified-detail {
+      position: relative;
+      max-width: 100%;
+      width: 1450px;
+      box-sizing: border-box;
+      padding: 0 260px 0 100px;
+      .detail-img { position: relative; }
+      .item-aside { margin-top: 0; }
+      .quote { margin-bottom: 20px; }
+      p { margin: 20px 0; }
+    }
+
+    .unified-circle {
+      position: absolute;
+      right: -123px;
+      top: -200px;
+      z-index: -1;
+      background: url(../images/live-chat/circle2.jpg) no-repeat center top;
+      background-size: 100%;
+      width: 415px;
+      height: 360px;
+    }
+  }
+
+  .acquire-quote {
+    position: relative;
+    .text-container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      .quote-text {
+        position: absolute;
+        width: 66%;
+        height: 100%;
+        background: url(../images/live-chat/bubble.png) no-repeat center center;
+        background-size: 100% 100%;
+        h3 { color: @blue; }
+        .text-detail {
+          position: absolute;
+          top: 50%;
+          left: 150px;
+          transform: translate(0, -50%);
+        }
+        .quote-para {
+          max-width: 420px;
+          margin: 30px 0 20px;
+          color: @dark-blue;
+        }
+        .sign { color: @blue; }
+        .title { margin-top: 14px; font-weight: 500; }
+      }
     }
   }
 }
