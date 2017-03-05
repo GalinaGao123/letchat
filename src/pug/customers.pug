@@ -1,0 +1,63 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/customers.css")
+
+block content
+  section.banner-section
+    h1 See why more than 17,000 businesses choose Intercom for personal customer communication
+    img(src="./images/customers/hero.png")
+
+  section.customers-section
+    h2 Read our customers stories
+    h5 Filter by use case
+    .filter
+      label
+        input(type="checkbox")
+        span Onboarding and retention
+      label
+        input(type="checkbox")
+        span Support and live chat
+
+    .customers-list
+      a.customer-card(href="#")
+        img.photo(src="./images/customers/white-label-dating.jpg")
+        img.logo(src="./images/customers/white-label-dating-logo.png", width=45)
+        .desc White Label Dating used Intercom to drive user engagement with in-app messaging on desktop and mobile web.
+        .read Read Story
+        .overlay
+          img.logo(src="./images/customers/white-label-dating-logo.png", width=45)
+          .speak I don't think we really even scratched the surface with Intercom, truth be told. There are lots of elements to the Intercom system that we're not taking advantage of. One of the main reasons that we chose Intercom in the first place is to have flexibility and room to grow. It's the beginning of the ride.
+
+      a.customer-card(href="#")
+        img.photo(src="./images/customers/frame-io.jpg")
+        img.logo(src="./images/customers/frame-io-logo.png", width=150)
+        .desc Media collaboration platform scales better customer support and engagement.
+        .read Read Story
+        .overlay
+          img.logo(src="./images/customers/frame-io-logo.png", width=150)
+          .speak Intercom feels so personal. So many of the conversations we had in the early days gave us a foundation of very dedicated and loyal customers.
+
+      a.customer-card(href="#")
+        img.photo(src="./images/customers/expensify.jpg")
+        img.logo(src="./images/customers/expensify-logo.png", width=140)
+        .desc How Expensify improved the support and sales experience for millions of customers.
+        .read Read Story
+        .overlay
+          img.logo(src="./images/customers/expensify-logo.png", width=140)
+          .speak Intercom has changed the way our Sales and Support teams collaborate. It’s costly to acquire a single customer, so having a single tool that lets us track, coach, and support users through every step of the funnel is priceless.
+
+      .story
+        img.logo(src="./images/customers/new-relic.svg", width=180)
+        .desc New Relic wanted useful feedback about a new feature. Rather than spam their entire database with a survey, they used Intercom to target power users of the feature and sent it to their inboxes where it wouldn’t be as disruptive.
+        .result-title Result
+        .result 21% replied with feedback, a 2.5x increase than their last, non-targeted survey
+
+      a.customer-card(href="#")
+        img.photo(src="./images/customers/moz.jpg")
+        img.logo(src="./images/customers/moz-logo.png", width=110)
+        .desc How Moz reduced their support median response time by 70% and increased customer loyalty in the process.
+        .read Read Story
+        .overlay
+          img.logo(src="./images/customers/moz-logo.png", width=110)
+          .speak Honestly, Intercom has spoiled our new customers with a great way to get a hold of us and a consistent way to receive onboarding messages. That’s what we want: an amazing experience with our success and support interactions.
