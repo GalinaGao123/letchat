@@ -151,6 +151,7 @@
       border-radius: 5px 5px 0 0;
       background: #e9edf0 url(../images/live-chat/browser.svg) no-repeat 7px 7px;
       image, video, svg {
+        display: block;
         box-shadow: 0 0 0 1px #dbe0e3;
       }
     }
@@ -431,6 +432,225 @@
         .sign { color: @blue; }
         .title { margin-top: 14px; font-weight: 500; }
       }
+    }
+  }
+
+  .how-it-works {
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 60px auto 0;
+
+    .launcher {
+      background: url(../images/live-chat/launcher.jpg) no-repeat center bottom;
+      background-size: 2300px;
+      height: 1484px;
+      left: 0;
+      right: 0;
+      margin-top: 225px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .respond {
+      position: relative;
+
+      &-bg {
+         background: url(../images/live-chat/circle2.jpg) no-repeat center top;
+        background-size: 100%;
+        width: 415px;
+        height: 360px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 0;
+        margin: -40px 0 0 -40px;
+      }
+    }
+
+    .performing {
+      position: relative;
+
+      &-bg {
+        background: url(../images/live-chat/circle2.jpg) no-repeat center top;
+        background-size: 100%;
+        width: 880px;
+        position: absolute;
+        top: 33%;
+        bottom: 0;
+        left: 50%;
+        margin-left: -440px;
+        z-index: 0;
+      }
+    }
+
+    .communications {
+      margin-top: 60px;
+    }
+
+    h2 {
+      margin: 0 auto 47px;
+      max-width: 600px;
+    }
+
+    .tab {
+      display: inline-block;
+      margin: 0 20px;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+      cursor: pointer;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      font-size: 13px;
+      &:hover {color: @lighter-red;}
+      &.current-tab {
+        color: @lighter-red;
+        position: relative;
+
+        &:before {
+          content: '';
+          overflow: hidden;
+          display: inline-block;
+          background: url(../images/live-chat/line.svg) repeat-x center top;
+          background-size: 100px 3px;
+          width: 100%;
+          height: 4px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .slick-for {
+      max-width: 1090px;
+      margin: 60px auto 0;
+      position: relative;
+
+      .slider { display: flex; align-items: center; }
+      
+      .slider-text {
+        max-width: 310px;
+        margin-left: 110px;
+        text-align: left;
+
+        .busy-img {
+          position: relative;
+          left: -135px;
+          max-width: none;
+          margin-top: 40px;
+        }
+
+        &.left {
+          max-width: 335px;
+          margin-right: 85px;
+          margin-left: 0;
+        }
+
+        h3 {
+          color: @red;
+          margin: 0 0 20px;
+        }
+      }
+
+      .slick-prev, .slick-next {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 50%;
+        cursor: pointer;
+        border-top: 1.5px solid #8da2b5;
+        border-left: 1.5px solid #8da2b5;
+        margin-top: -10px;
+      }
+
+      .slick-prev {
+        left: -40px;
+        transform: rotate(-45deg);
+      }
+
+      .slick-next {
+        right: -40px;
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  .features {
+    background-color: @blue;
+    box-sizing: border-box;
+    padding: 115px 0;
+
+    &-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 20px;
+      display: flex;
+    }
+
+    .feature {
+      color: #fff; 
+      margin-top: 65px;
+
+      h4 {color: #fff; margin-top: 20px;}
+      span {
+        font-size: 14px;
+        margin-top: 14px;
+        display: inline-block;  
+      }
+
+      &-grid {
+        width: 70%;
+        margin-top: -65px;
+      }
+
+      &-icon {
+        height: 60px;
+        display: flex;
+      }
+
+      &-title {
+        width: 30%;
+        color: #fff;
+        box-sizing: border-box;
+        padding-right: 40px;
+
+        p {
+          max-width: 200px;
+          margin: 17px 0 20px;
+          letter-spacing: 0.08em;
+        }
+        h3 {
+          color: #fff;
+          display: inline-block;
+          position: relative;
+          margin: 0;
+
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../images/live-chat/stars-1.svg) no-repeat 100% 100%;
+            width: 38px;
+            height: 20px;
+            left: -52px;
+            top: 13px;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../images/live-chat/stars-2.svg) no-repeat 100% 100%;
+            width: 56px;
+            height: 30px;
+            right: -38px;
+            top: 3px;
+          }
+        }
+      }
+
     }
   }
 }
