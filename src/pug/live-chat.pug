@@ -6,7 +6,6 @@ block css
 block content
   .live-chat
     .banner
-      img(src="./images/live-chat/banner.jpg")
       .banner-text
         .h6 The Intercom Product for Live Chat
         h1.h1 Every website visitor is a sales opportunity. Chat and convert them to customers.
@@ -15,7 +14,10 @@ block content
             input(type="text", name="", placeholder="Enter your emial")
             button.btn.btn-primary(type="submit") Get Started
         .video-btn WATCH THE VIDEO
-    .section
+      img.hidden-xs(src="./images/live-chat/banner.jpg")
+      .row
+        img.visible-xs(src="./images/live-chat/hero-reverse.jpg")
+    .section.p20
       .chat-width-visitor.p20 
         img(src="./images/live-chat/1.svg")
         h3.h3 Chat with visitors on your website in real-time, capture leads, and continue conversations by email if they leave.
@@ -38,89 +40,100 @@ block content
         span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
         .join
           .join-info.mt0 Join thousands of businesses who use intercom to Acquire new customers
-          img(src="./images/live-chat/logos.png")
+          img.hidden-xs(src="./images/live-chat/logos.png")
+          img.visible-xs(src="./images/live-chat/logos-md.png", width="247")
     .bubble-box
     .overview
-      .title 
-        img(src="./images/live-chat/overview.png", width="512")
-      .welcome.section
-        .h6 welcome
-        h2.h1 Always open and available to help
-        .overview-desc.h5 Grab attention by showing the faces of people on your team and have lively conversations that engage visitors on your website.
-        .welcome-items
-          .img-left
-            img(src="./images/live-chat/bg-left.png")
-          .item-pc.browser
-            .img-right
-              img(src="./images/live-chat/open.png")
-            video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-2x-74ee9dfe84c8af0076aa6e8255a9ff504942df460999440a665ece2a7c2547a2.mp4#t=1", poster="./images/live-chat/welcome.jpg", width="876")
-          .item-mobile
-            video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-mobile-2x-0627ed917605d5fa6b437cc38e8c882680b3545f4b56398a824bfe47fa3a261c.mp4#t=1", poster="./images/live-chat/app.jpg", width="220px")
-          .control-bar 
-            .pc.active
-              include ../images/live-chat/pc.svg
-            .mobile 
-              include ../images/live-chat/mobile.svg
-      .target.section 
-        .h6 target
-        h2.h1 Proactively start targeted live chats
-        .overview-desc.h5 Encourage action by sending targeted messages automatically triggered by a visitor's behavior on your website.
-        .targer-grid 
-          .col-sm-4.filter
-            .filter-text It's easy to create rules that trigger targeted messages:
-            img(src="./images/live-chat/rule.png")
-            .line-horizen
-          .col-sm-8
-            .target-video.browser
-              video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/target-2x-c15e187510ec28282a073934873dfb146267e3fd1abfdd838dfe740a6403c825.mp4#t=1" type="video/mp4" width="650" poster="./images/live-chat/website.jpg")
-      .collaborate.section 
-        .h6 collaborate
-        h2.h1 Work together to convert visitors to customers
-        .overview-desc.h5 A shared team inbox makes it easy to manage chats and involve the right teammates to handle difficult questions.
-        .collaborate-detail
-          .collaborate-items 
-            .col-pc.browser
-              img(src="./images/live-chat/collaborate.png", width="876")
-              .left-bg
-                img(src="./images/live-chat/high-five.png")
+      .p20
+        .title 
+          img(src="./images/live-chat/overview.png", width="512")
+        .welcome.section
+          .h6 welcome
+          h2.h1 Always open and available to help
+          .overview-desc.h5 Grab attention by showing the faces of people on your team and have lively conversations that engage visitors on your website.
+          .welcome-items
+            .img-left
+              img(src="./images/live-chat/bg-left.png")
+            .item-pc
+              .img-right
+                img(src="./images/live-chat/open.png")
+              .browser
+                video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-2x-74ee9dfe84c8af0076aa6e8255a9ff504942df460999440a665ece2a7c2547a2.mp4#t=1", poster="./images/live-chat/welcome.jpg")
             .item-mobile
-              img(src="./images/live-chat/collaborate-2.png", width="220")
-          .item-aside 
-            img.blog(src="./images/live-chat/on-the-blog.jpg", width="161")
-            .aside-title.h6 Looking to switch?
-            .aside-desc 
-              | See how we compare to 
-              a(href="#") Olark
-              |   and   
-              a(href="#") Zopim
+              video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-mobile-2x-0627ed917605d5fa6b437cc38e8c882680b3545f4b56398a824bfe47fa3a261c.mp4#t=1", poster="./images/live-chat/app.jpg")
+            .control-bar 
+              .pc.control-btn.active
+                include ../images/live-chat/pc.svg
+              .mobile.control-btn
+                include ../images/live-chat/mobile.svg
+        .target.section 
+          .h6 target
+          h2.h1 Proactively start targeted live chats
+          .overview-desc.h5 Encourage action by sending targeted messages automatically triggered by a visitor's behavior on your website.
+          .target-grid
+            .row.clearfix
+              .col-sm-4.filter
+                .filter-text It's easy to create rules that trigger targeted messages:
+                img(src="./images/live-chat/rule.png")
+                .line-horizen
+              .col-sm-8
+                .target-video
+                  .browser
+                    video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/target-2x-c15e187510ec28282a073934873dfb146267e3fd1abfdd838dfe740a6403c825.mp4#t=1" type="video/mp4" poster="./images/live-chat/website.jpg")
+                  .target-bg
+        .collaborate.section 
+          .h6 collaborate
+          h2.h1 Work together to convert visitors to customers
+          .overview-desc.h5 A shared team inbox makes it easy to manage chats and involve the right teammates to handle difficult questions.
+          .collaborate-detail
+            .collaborate-items 
+              .col-pc
+                .browser
+                  img(src="./images/live-chat/collaborate.png", width="876")
+                .left-bg.hidden-xs
+                  img(src="./images/live-chat/high-five.png")
+              .item-mobile
+                img(src="./images/live-chat/collaborate-2.png", width="220")
+            .item-aside.hidden-xs
+              img.blog(src="./images/live-chat/on-the-blog.jpg", width="161")
+              .aside-title.h6 Looking to switch?
+              .aside-desc 
+                | See how we compare to 
+                a(href="#") Olark
+                |   and   
+                a(href="#") Zopim
           .control-bar 
-            .pc.active
+            .pc.control-btn.active
               include ../images/live-chat/pc.svg
-            .mobile 
+            .mobile.control-btn
               include ../images/live-chat/mobile.svg
-      .follow-up.section
-        .h6 follow-up
-        h2.h1 Keep conversations alive by email if visitors leave
-        .overview-desc.h5 Capture email addresses to notify leads by email when you respond.
-        .follow-up-detail 
-          .item-mobile
-            img(src="./images/live-chat/seamless.png", width="220")
-      .unified.section
-        .h6 unified
-        h2.h1 Have a complete view of every customer
-        .overview-desc.h5 See a live profile for every visitor that starts a conversation, capture them as leads, and keep their full history when they become customers.
-        .unified-detail 
-          .detail-img.browser
-            .unified-circle
-            img(src="./images/live-chat/unified-2.png", width="876")
-          .item-aside 
-            .aside-title.h6 Behind the scenes
-            .quote Today’s live chat is broken because there is no continuous record when a potential customer signs up and becomes a customer. We fixed that, so there is one profile, one true record, of all a person’s activity and conversations.
-            img(src="./images/live-chat/paul.png", width="93")
-            p VP of Product, Intercom
+          .left-bg.visible-xs
+            img(src="./images/live-chat/high-five.png")
+        .follow-up.section.row
+          .p20
+            .h6 follow-up
+            h2.h1 Keep conversations alive by email if visitors leave
+            .overview-desc.h5 Capture email addresses to notify leads by email when you respond.
+            .follow-up-detail 
+              .item-mobile.active
+                img(src="./images/live-chat/seamless.png", width="220")
+        .unified.section
+          .h6 unified
+          h2.h1 Have a complete view of every customer
+          .overview-desc.h5 See a live profile for every visitor that starts a conversation, capture them as leads, and keep their full history when they become customers.
+          .unified-detail 
+            .detail-img.browser
+              .unified-circle
+              img(src="./images/live-chat/unified-2.png", width="876")
+            .item-aside.hidden-xs
+              .aside-title.h6 Behind the scenes
+              .quote Today’s live chat is broken because there is no continuous record when a potential customer signs up and becomes a customer. We fixed that, so there is one profile, one true record, of all a person’s activity and conversations.
+              img(src="./images/live-chat/paul.png", width="93")
+              p VP of Product, Intercom
     .acquire-quote.section
-      img(src="./images/live-chat/morgan.jpg", width="1404")
-      .p20.text-container
+      .morgan.hidden-xs
+        img(src="./images/live-chat/morgan.jpg", width="1404")
+      .text-container
         .quote-text
           .text-detail
             h3.h6 Featured customer: IRON.IO
@@ -128,6 +141,8 @@ block content
             .sign 
               img(src="./images/live-chat/morgan-sig.png", width="250")
               .title VICE PRESIDENT OF SALES
+      .quote-img.visible-xs
+        img(src="./images/live-chat/morgan-small.jpg")
     .overview.how-it-works
       .title 
         img(src="./images/live-chat/how-it-works.png", width="636")
@@ -135,8 +150,8 @@ block content
       .communication.section 
         h2.h1
           | Have more conversations
-          br 
-          | with visitors
+          br.hidden-xs
+          |  with visitors
         .tabs
           .tab.current-tab
             span Visitor Auto Messages
@@ -158,22 +173,22 @@ block content
       .experience.section 
         h2.h1
           | Provide a modern
-          br 
-          | messaging experience
+          br.hidden-xs
+          |  messaging experience
         .tabs
           .tab.current-tab
             span Real-time Messaging
           .tab
             span Stickers, Emoji & Gifs
         .slick-for 
-          .slider 
-            .slider-text.left
+          .slider.left
+            .slider-text
               h3.h2 Have live conversations
               p Typing indicators, read receipts, and sounds bring conversations to life.
             .browser
               video(width="650", src="https://marketing.intercomassets.com/assets/acquire/breakdown/mv3/real-time-2x-fd2636ee61334999b76ba75c7a935e1dcf18ae2ead426c3ac93df79601b22c87.mp4#t=1", poster="./images/live-chat/visitor-auto-messages.jpg")
-          .slider 
-            .slider-text.left
+          .slider.left
+            .slider-text
               h3.h2 Express yourself
               p Inject life into your conversations. Why type it when you can show it.
             .browser 
@@ -203,8 +218,8 @@ block content
             .slider-text
               h3.h2
                 | Answer questions
-                br 
-                | as a team
+                br.hidden-xs
+                |  as a team
               p Loop in teammates and collaborate behind the scenes to answer difficult questions together.
           .slider 
             .browser 
@@ -229,21 +244,21 @@ block content
           .tab 
             span Auto Message Goals
         .slick-for 
-          .slider 
-            .slider-text.left
+          .slider.left
+            .slider-text
               h3.h2 How busy are you?
               p See your daily, weekly, and monthly volume of conversations with visitors.
               img.busy-img(width="551", src="./images/live-chat/insights.png")
             .browser
               img(width="650", src="./images/live-chat/conversation-volume.png")
-          .slider 
-            .slider-text.left
+          .slider.left
+            .slider-text
               h3.h2 Are your auto messages working?
               p Know which auto messages are performing best and how you compare to other companies.
             .browser 
               img(width="650", src="./images/live-chat/visitor-auto-messages-performance.png")
-          .slider 
-            .slider-text.left
+          .slider.left
+            .slider-text
               h3.h2 What's the impact of your message?
               p Goals let you measure the effectiveness of your visitor auto messages and see if people who saw your message took actions like signing up for your product or service.
             .browser 
@@ -255,70 +270,67 @@ block content
           p.h5 Everything you need to convert visitors to your website to customers.
         .feature-grid
           .row 
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="45", src="./images/live-chat/launcher.svg")
               h4.h6 Messenger launcher
               span Grab visitors’ attention with the faces of your team and let them ask questions
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="50", src="./images/live-chat/messenger.svg")
               h4.h6 Intercom Messenger
               span Chat in real-time with website visitors, complete with attachments and emoji
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="50", src="./images/live-chat/auto_messages.svg")
               h4.h6 Visitor auto message
               span Send targeted chats to visitors based on their activity
-          .row 
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="80", src="./images/live-chat/localization.svg")
               h4.h6 Localization
               span Greet visitors to your website in their local language
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="95", src="./images/live-chat/email_messages.svg")
               h4.h6 Notifications
               span Send replies by email if a visitor leaves your website before you respond
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="38", src="./images/live-chat/team_inbox.svg")
               h4.h6 Team inbox
               span View, manage, and respond to conversations in a collaborative inbox
-          .row 
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="72", src="./images/live-chat/live_profiles.svg")
               h4.h6 Live lead profiles
               span See a visitor’s website activity, conversation history, and more
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="70", src="./images/live-chat/notes_mentions.svg")
               h4.h6 Notes & mentions
               span Loop in teammates and work together behind the scenes to answer questions
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="70", src="./images/live-chat/saved_replies.svg")
               h4.h6 Saved replies
               span Respond to common questions with canned, yet personalized replies
-          .row 
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="50", src="./images/live-chat/teams.svg")
               h4.h6 Teams
               span Create groups of teammates and assign chats to the team best equipped to respond
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="52", src="./images/live-chat/insights.svg")
               h4.h6 Insights
               span See conversation volume and understand how your auto messages are performing
-            .col-xs-4.feature
+            .feature
               .feature-icon 
                 img(width="100", src="./images/live-chat/ios_android_app.svg")
               h4.h6 iOS and Android apps
               span Reply to people on the go with Intercom apps for iOS and Android
-    .bottom-form
+    .bottom-form.p20
       .trial-form
           h2.h1.tx-red Try it free for 14 days
           form(actions="")
