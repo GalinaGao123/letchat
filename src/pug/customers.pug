@@ -3,13 +3,16 @@ extends common/layout.pug
 block css
   link(rel="stylesheet" href="./css/customers.css")
 
+block js
+  script(src='./js/customers.js')
+
 block content
   section.banner-section
-    h1 See why more than 17,000 businesses choose Intercom for personal customer communication
+    h1.h1 See why more than 17,000 businesses choose Intercom for personal customer communication
     img(src="./images/customers/hero.png")
 
   section.customers-section
-    h2 Read our customers stories
+    h2.h2 Read our customers stories
     h5 Filter by use case
     .filter
       label
@@ -64,6 +67,7 @@ block content
 
       .customers-logos
         img(src="./images/customers/logos-1.png")
+        img.md(src="./images/customers/logos-1-md.png")
 
     .customers-list
       a.customer-card(href="#")
@@ -110,6 +114,7 @@ block content
 
       .customers-logos
         img(src="./images/customers/logos-2.png")
+        img.md(src="./images/customers/logos-2-md.png")
 
     .customers-list
       a.customer-card(href="#")
@@ -156,6 +161,7 @@ block content
 
       .customers-logos
         img(src="./images/customers/logos-3.png")
+        img.md(src="./images/customers/logos-3-md.png")
 
     .customers-list
       a.customer-card(href="#")
@@ -181,3 +187,27 @@ block content
         .overlay
           img.logo(src="./images/customers/codeship-logo.png", width=150)
           .speak One of the best things about Intercom is that with a few clicks, anyone can create a customer segment without additional implementation or programming.
+
+  section.last-section
+    .customers-words
+      .carousel
+        .carousel-item
+          img(src="./images/customers/wake.svg", width=40)
+          p “Intercom brings us closer to our customers. I have no idea what we would do without it!”
+        .carousel-item
+          img(src="./images/customers/chariot.png", width=100)
+          p “The Intercom Messenger has helped Chariot easily personalize communication with our commuters. It has even opened up numerous opportunities to engage with new partners!”
+        .carousel-item
+          img(src="./images/customers/fog.svg", width=150)
+          p “We love the Messenger's teammate profiles - they allow us to show more personality, making it clear there's real people helping our customers - rather than faceless agents and this helps us build positive relationships.”
+      .globe
+        .arrow
+        img(src="./images/customers/globe-1.gif", width=124)
+
+    .trial-form
+      h2.h1.tx-blue Try Intercom free for 14 days
+      form(actions="")
+        .clearfix.home-form
+          input(type="text", name="", placeholder="Enter your emial")
+          button.btn.btn-primary(type="submit") Get Started
+      span.form-desc Easy setup &nbsp;&bullet;&nbsp; Send unlimited messages &nbsp;&bullet;&nbsp; Buy or cancel at any time
