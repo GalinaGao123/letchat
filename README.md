@@ -5,7 +5,7 @@
 - [LiveChat](https://guoxiangke.github.io/letchat/live-chat.html)
 - [Customers](https://guoxiangke.github.io/letchat/customers.html)
 - [Docs](https://guoxiangke.github.io/letchat/docs.html)
-- [DocsDetail](https://guoxiangke.github.io/letchat/docs-detail.html)
+- [DocsDetail](https://guoxiangke.github.io/letchat/doc-detail.html)
 - [Demo](https://guoxiangke.github.io/letchat/demos.html)
 
 
