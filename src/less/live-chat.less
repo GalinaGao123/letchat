@@ -30,7 +30,7 @@
       color: @blue;
       padding-left: 30px;
       position: relative;
-      &:before {
+      &::before {
         content: '';
         height: 22px;
         width: 22px;
@@ -41,7 +41,7 @@
         top: 50%;
         margin-top: -11px;
       }
-      &:after {
+      &::after {
         content: '';
         line-height: 0;
         border: 6px solid transparent;
@@ -260,7 +260,7 @@
         background-size: 100px 3px;
         position: relative;
 
-        &:before, &:after {
+        &::before, &::after {
           content: ' ';
           overflow: hidden;
           background: url(../images/live-chat/line.svg) repeat-x center top;
@@ -272,11 +272,11 @@
           right: 0;
         }
 
-        &:before {
+        &::before {
           transform: rotate(-45deg);
         }
 
-        &:after {
+        &::after {
           transform: rotate(45deg);
           right: -1px;
         }
@@ -350,7 +350,7 @@
         }
       }
 
-      &:before {
+      &::before {
         content : ' ';
         display: block;
         overflow: hidden;
@@ -507,7 +507,7 @@
         color: @lighter-red;
         position: relative;
 
-        &:before {
+        &::before {
           content: '';
           overflow: hidden;
           display: inline-block;
@@ -651,6 +651,62 @@
         }
       }
 
+    }
+  }
+
+  .bottom-form {
+    box-sizing: border-box;
+    padding: 115px 0;
+    background: url(../images/live-chat/circle-xlg.jpg) no-repeat center top;
+    background-size: 1400px 1150px;
+
+    .bottom-bg {
+      height: 509px;
+      margin-top: -110px;
+      background: url(../images/live-chat/footer.png) no-repeat center bottom;
+    }
+  }
+
+  .quote-box {
+    display: flex;
+
+    .person {
+      width: 120px;
+      flex: 0 0 auto;
+      text-align: left;
+    }
+
+    .quote-text {
+      text-align: left;
+
+      img {
+        margin-top: 16px;
+        max-width: 202px;
+      }
+
+      p {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          top: -3px;
+          left: -30px;
+          display: block;
+          width: 22px;
+          height: 17px;
+          background: url(../images/live-chat/quote.svg) no-repeat center;
+          transform: scaleY(-1);
+        }
+      }
+
+      .title {
+        font-size: 12px;
+        color: @blue;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-top: 5px;
+      }
     }
   }
 }

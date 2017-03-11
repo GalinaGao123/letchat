@@ -125,7 +125,7 @@
     }
     .educate {
       position: relative;
-      &:after {
+      &::after {
         content: 'NEW';
         display: block;
         position: absolute;
@@ -311,7 +311,7 @@
         padding: 5px 14px;
         font-weight: 500;
         margin-right: 20px;
-        &:after {
+        &::after {
           content: '';
           margin-left: 5px;
           .generate-triangle(5px, @blue, 'right')
@@ -319,7 +319,7 @@
         &:hover {
           color: @mid-blue;
           border-color: @mid-blue;
-          &:after {
+          &::after {
             border-left: 5px solid @mid-blue;
           }
         }

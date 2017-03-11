@@ -33,12 +33,12 @@ ul, p {
 
 .quote {
   position: relative;
-  &:before {
+  &::before {
     content: '"';
     position: absolute;
     left: -9px;
   }
-  &:after {
+  &::after {
     content: '"';
     position: absolute;
     margin-left: 2px;
@@ -187,11 +187,16 @@ body {
     margin: 28px auto;
   }
   .join {
-    margin-top: 48px;
+    margin: 48px -50px 0;
     border-top: 1px solid @light-grey;
     box-sizing: border-box;
-    padding-top: 48px;
-    .join-info {margin: 30px auto 20px; max-width: 550px;}
+    padding: 48px 50px 0;
+    .join-info {
+      margin: 30px auto 20px;
+      max-width: 550px;
+      
+      &.mt0 { margin-top: 0; }
+    }
   }
 }
 

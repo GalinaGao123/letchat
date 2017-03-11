@@ -288,13 +288,13 @@
     &.open {
       .menu-btn {
         border-color: transparent;
-        &:before {
+        &::before {
           top: 0;
           transform-origin: center center;
           transform: rotateZ(45deg);
         }
 
-        &:after {
+        &::after {
           bottom: auto;
           top: 0;
           transform-origin: center center;
@@ -327,8 +327,8 @@
     position: relative;
     display: inline-block;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       width: 100%;
       border-top: 2px solid @blue;
@@ -336,11 +336,11 @@
 
     }
 
-    &:before {
+    &::before {
       top: -8px;
     }
 
-    &:after {
+    &::after {
       bottom: -6px;
     }
 
