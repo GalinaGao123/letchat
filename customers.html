@@ -64,7 +64,7 @@
             </div>
           </div><a class="nav-link" href="#">Blog</a><a class="nav-link" href="#">Login</a>
           <form class="get-started">
-            <input type="text" placeholder="Enter your email">
+            <input class="email" type="text" placeholder="Enter your email">
             <button type="submit">Get Started</button>
           </form>
         </div>
@@ -79,107 +79,107 @@
         <h5>Filter by use case</h5>
         <div class="filter">
           <label>
-            <input type="checkbox"><span>Onboarding and retention</span>
+            <input class="onbording" type="checkbox" data-multifilter="onboarding"><span>Onboarding and retention</span>
           </label>
           <label>
-            <input type="checkbox"><span>Support and live chat</span>
+            <input class="support" type="checkbox" data-multifilter="support"><span>Support and live chat</span>
           </label>
         </div>
-        <div class="customers-list"><a class="customer-card" href="#"><img class="photo" src="./images/customers/white-label-dating.jpg"><img class="logo" src="./images/customers/white-label-dating-logo.png" width="45">
+        <div class="customers-list" id="filter-container"><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/white-label-dating.jpg"><img class="logo" src="./images/customers/white-label-dating-logo.png" width="45">
             <div class="desc">White Label Dating used Intercom to drive user engagement with in-app messaging on desktop and mobile web.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/white-label-dating-logo.png" width="45">
               <div class="speak">I don't think we really even scratched the surface with Intercom, truth be told. There are lots of elements to the Intercom system that we're not taking advantage of. One of the main reasons that we chose Intercom in the first place is to have flexibility and room to grow. It's the beginning of the ride.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/frame-io.jpg"><img class="logo" src="./images/customers/frame-io-logo.png" width="150">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/frame-io.jpg"><img class="logo" src="./images/customers/frame-io-logo.png" width="150">
             <div class="desc">Media collaboration platform scales better customer support and engagement.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/frame-io-logo.png" width="150">
               <div class="speak">Intercom feels so personal. So many of the conversations we had in the early days gave us a foundation of very dedicated and loyal customers.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/expensify.jpg"><img class="logo" src="./images/customers/expensify-logo.png" width="140">
+            </div></a><a class="customer-card" date-filter="filter" data-category="support" href="#"><img class="photo" src="./images/customers/expensify.jpg"><img class="logo" src="./images/customers/expensify-logo.png" width="140">
             <div class="desc">How Expensify improved the support and sales experience for millions of customers.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/expensify-logo.png" width="140">
               <div class="speak">Intercom has changed the way our Sales and Support teams collaborate. It’s costly to acquire a single customer, so having a single tool that lets us track, coach, and support users through every step of the funnel is priceless.</div>
             </div></a>
-          <div class="story"><img class="logo" src="./images/customers/new-relic.svg" width="180">
+          <div class="story" date-filter="filter" data-category=""><img class="logo" src="./images/customers/new-relic.svg" width="180">
             <div class="desc">New Relic wanted useful feedback about a new feature. Rather than spam their entire database with a survey, they used Intercom to target power users of the feature and sent it to their inboxes where it wouldn’t be as disruptive.</div>
             <div class="result-title">Result</div>
             <div class="result">21% replied with feedback, a 2.5x increase than their last, non-targeted survey</div>
-          </div><a class="customer-card" href="#"><img class="photo" src="./images/customers/moz.jpg"><img class="logo" src="./images/customers/moz-logo.png" width="110">
+          </div><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/moz.jpg"><img class="logo" src="./images/customers/moz-logo.png" width="110">
             <div class="desc">How Moz reduced their support median response time by 70% and increased customer loyalty in the process.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/moz-logo.png" width="110">
               <div class="speak">Honestly, Intercom has spoiled our new customers with a great way to get a hold of us and a consistent way to receive onboarding messages. That’s what we want: an amazing experience with our success and support interactions.</div>
             </div></a>
-          <div class="customers-logos"><img src="./images/customers/logos-1.png"><img class="md" src="./images/customers/logos-1-md.png"></div>
+          <div class="customers-logos" date-filter="filter" data-category=""><img src="./images/customers/logos-1.png"><img class="md" src="./images/customers/logos-1-md.png"></div>
         </div>
-        <div class="customers-list"><a class="customer-card" href="#"><img class="photo" src="./images/customers/bugherd.jpg"><img class="logo" src="./images/customers/bugherd-logo.png" width="114">
+        <div class="customers-list"><a class="customer-card" date-filter="filter" data-category="onboarding" href="#"><img class="photo" src="./images/customers/bugherd.jpg"><img class="logo" src="./images/customers/bugherd-logo.png" width="114">
             <div class="desc">Software development company gathers 150% more feedback from customers.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/bugherd-logo.png" width="114">
               <div class="speak">I think what’s great about Intercom is that every message feels immediate and personal, allowing us to scale while staying authentic.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/salesloft.jpg"><img class="logo" src="./images/customers/salesloft-logo.png" width="150">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/salesloft.jpg"><img class="logo" src="./images/customers/salesloft-logo.png" width="150">
             <div class="desc">How Salesloft used Intercom to go from 5% to 40% of demo appointments booked through live chat.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/salesloft-logo.png" width="150">
               <div class="speak">Intercom lets us identify and prioritize prospects that arrive from the website more efficiently. We can make a personal connection and an impactful experience that sets us apart.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/cloudsponge.jpg"><img class="logo" src="./images/customers/cloudsponge-logo.png" width="100">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/cloudsponge.jpg"><img class="logo" src="./images/customers/cloudsponge-logo.png" width="100">
             <div class="desc">How CloudSponge upgraded 20% of grandfathered accounts in a day.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/cloudsponge-logo.png" width="100">
               <div class="speak">We expected that moving all of our grandfathered customers to new plans would take a year, but with Intercom’s help, we had 20% of them upgrade on the first day – that we didn’t expect.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/invision.jpg"><img class="logo" src="./images/customers/invision-logo.png" width="112">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding" href="#"><img class="photo" src="./images/customers/invision.jpg"><img class="logo" src="./images/customers/invision-logo.png" width="112">
             <div class="desc">Prototyping tool for designers maintains email open rates above 75%.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/invision-logo.png" width="112">
               <div class="speak">Users are quick to dismiss things that seem fake or contrived, and personalized messaging is one of the best ways to get users to actually receive and read the message you are sending.</div>
             </div></a>
-          <div class="story"><img class="logo" src="./images/customers/typeform.png" width="141">
+          <div class="story" date-filter="filter" data-category=""><img class="logo" src="./images/customers/typeform.png" width="141">
             <div class="desc">Visitors can build a form or survey before signing up, but in order to save and share it, they need to create an account. To encourage visitors to take this next step, they triggered an in-app message that appears after someone builds their first typeform.</div>
             <div class="result-title">Result</div>
             <div class="result">92% of those who opened the message saved their typeform</div>
           </div>
-          <div class="customers-logos"><img src="./images/customers/logos-2.png"><img class="md" src="./images/customers/logos-2-md.png"></div>
+          <div class="customers-logos" date-filter="filter" data-category=""><img src="./images/customers/logos-2.png"><img class="md" src="./images/customers/logos-2-md.png"></div>
         </div>
-        <div class="customers-list"><a class="customer-card" href="#"><img class="photo" src="./images/customers/desk.jpg"><img class="logo" src="./images/customers/desk-logo.png" width="90">
+        <div class="customers-list"><a class="customer-card" date-filter="filter" data-category="onboarding" href="#"><img class="photo" src="./images/customers/desk.jpg"><img class="logo" src="./images/customers/desk-logo.png" width="90">
             <div class="desc">Product management team engages customers 50% more.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/desk-logo.png" width="90">
               <div class="speak">There are plenty of tools that tell you what features your customers use, but sometimes they miss the most important feedback: why customers use features. Intercom gives us that.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/baremetrics.jpg"><img class="logo" src="./images/customers/baremetrics-logo.svg" width="179">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/baremetrics.jpg"><img class="logo" src="./images/customers/baremetrics-logo.svg" width="179">
             <div class="desc">How Baremetrics used Intercom to increase annual billing by 30%.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/baremetrics-logo.svg" width="179">
               <div class="speak">With Intercom we get the insights we need to constantly improve the customer experience. We can make fewer assumptions about our customers and message them at the best possible moment.</div>
-            </div></a><a class="customer-card" href="#"><img class="photo" src="./images/customers/droplr.jpg"><img class="logo" src="./images/customers/droplr-logo.png" width="120">
+            </div></a><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/droplr.jpg"><img class="logo" src="./images/customers/droplr-logo.png" width="120">
             <div class="desc">File-sharing app ditches tickets for conversations to build transparency across all customer communications.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/droplr-logo.png" width="120">
               <div class="speak">With Intercom, you get all the right context to solve real people’s problems. This is important if you want to treat your customers like people rather than like tickets.</div>
             </div></a>
-          <div class="story"><img class="logo" src="./images/customers/fitbark.png" width="90">
+          <div class="story" date-filter="filter" data-category=""><img class="logo" src="./images/customers/fitbark.png" width="90">
             <div class="desc">As an activity monitor for dogs, FitBark works best when owners set goals for their dog’s activities. Email reminders were ignored, so FitBark triggered an in-app message to active customers who hadn’t set a goal within their first two weeks.</div>
             <div class="result-title">Result</div>
             <div class="result">92% set an activity goal after seeing this message</div>
-          </div><a class="customer-card" href="#"><img class="photo" src="./images/customers/vend.jpg"><img class="logo" src="./images/customers/vend-logo.png" width="70">
+          </div><a class="customer-card" date-filter="filter" data-category="onboarding" href="#"><img class="photo" src="./images/customers/vend.jpg"><img class="logo" src="./images/customers/vend-logo.png" width="70">
             <div class="desc">Point-of-sale solution increases conversion rate by 30%.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/vend-logo.png" width="70">
               <div class="speak">I remember the moment we turned on Intercom - as the map of our customers began to populate in real time, we literally high fived each other!</div>
             </div></a>
-          <div class="customers-logos"><img src="./images/customers/logos-3.png"><img class="md" src="./images/customers/logos-3-md.png"></div>
+          <div class="customers-logos" date-filter="filter" data-category=""><img src="./images/customers/logos-3.png"><img class="md" src="./images/customers/logos-3-md.png"></div>
         </div>
-        <div class="customers-list"><a class="customer-card" href="#"><img class="photo" src="./images/customers/put-io.jpg"><img class="logo" src="./images/customers/put-io-logo.png" width="120">
+        <div class="customers-list"><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/put-io.jpg"><img class="logo" src="./images/customers/put-io-logo.png" width="120">
             <div class="desc">Pro-active support helps cloud-based bittorrent engine reduce churn by 14%.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/put-io-logo.png" width="120">
               <div class="speak">It’s nice being able to announce problems through a private two-way conversation, rather than as a one-off message posted in a forum or through Twitter. Email-based confessions come too late or too early.</div>
             </div></a>
-          <div class="story"><img class="logo" src="./images/customers/later.png" width="112">
+          <div class="story" date-filter="filter" data-category=""><img class="logo" src="./images/customers/later.png" width="112">
             <div class="desc">Later, a popular mobile app for Instagram scheduling, wanted to reach out to new signups before they slipped away. Using Intercom, they sent an email to new users who hadn’t been active for two days.</div>
             <div class="result-title">Result</div>
             <div class="result">23% of recipients scheduled a post<br/>17% more users were retained from targeted on boarding messages</div>
-          </div><a class="customer-card" href="#"><img class="photo" src="./images/customers/codeship.jpg"><img class="logo" src="./images/customers/codeship-logo.png" width="150">
+          </div><a class="customer-card" date-filter="filter" data-category="onboarding, support" href="#"><img class="photo" src="./images/customers/codeship.jpg"><img class="logo" src="./images/customers/codeship-logo.png" width="150">
             <div class="desc">Continuous integration tool stays personal while quadrupling users.</div>
             <div class="read">Read Story</div>
             <div class="overlay"><img class="logo" src="./images/customers/codeship-logo.png" width="150">
@@ -206,9 +206,9 @@
         </div>
         <div class="trial-form">
           <h2 class="h1 tx-blue">Try Intercom free for 14 days</h2>
-          <form actions="">
+          <form class="get-started" actions="">
             <div class="clearfix home-form">
-              <input type="text" name="" placeholder="Enter your emial">
+              <input class="email" type="text" name="" placeholder="Enter your emial">
               <button class="btn btn-primary" type="submit">Get Started</button>
             </div>
           </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Send unlimited messages &nbsp;&bullet;&nbsp; Buy or cancel at any time</span>
