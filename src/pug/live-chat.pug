@@ -6,12 +6,15 @@ block css
 block content
   .live-chat
     .banner
+      .banner-video
+        .close-btn
+        video(src="./images/video/live-profiles.mp4", controls="controls")
       .banner-text
         .h6 The Intercom Product for Live Chat
         h1.h1 Every website visitor is a sales opportunity. Chat and convert them to customers.
-        form(actions="")
+        form.get-started(actions="")
           .clearfix.home-form
-            input(type="text", name="", placeholder="Enter your emial")
+            input.email(type="text", name="", placeholder="Enter your emial")
             button.btn.btn-primary(type="submit") Get Started
         .video-btn WATCH THE VIDEO
       img.hidden-xs(src="./images/live-chat/banner.jpg")
@@ -33,9 +36,9 @@ block content
             .grid-title Team inbox
       .trial-form
         h2.h1.tx-red Try it free for 14 days
-        form(actions="")
+        form.get-started(actions="")
           .clearfix.home-form
-            input(type="text", name="", placeholder="Enter your emial")
+            input.email(type="text", name="", placeholder="Enter your emial")
             button.btn.btn-primary(type="submit") Get Started
         span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
         .join
@@ -58,9 +61,9 @@ block content
               .img-right
                 img(src="./images/live-chat/open.png")
               .browser
-                video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-2x-74ee9dfe84c8af0076aa6e8255a9ff504942df460999440a665ece2a7c2547a2.mp4#t=1", poster="./images/live-chat/welcome.jpg")
+                video.video(src="./images/video/welcome.mp4", poster="./images/live-chat/welcome.jpg")
             .item-mobile
-              video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/welcome-mobile-2x-0627ed917605d5fa6b437cc38e8c882680b3545f4b56398a824bfe47fa3a261c.mp4#t=1", poster="./images/live-chat/app.jpg")
+              video.video(src="./images/video/welcome-mobile.mp4", poster="./images/live-chat/app.jpg")
             .control-bar 
               .pc.control-btn.active
                 include ../images/live-chat/pc.svg
@@ -79,7 +82,7 @@ block content
               .col-sm-8
                 .target-video
                   .browser
-                    video(src="https://marketing.intercomassets.com/assets/acquire/tour/mv3/target-2x-c15e187510ec28282a073934873dfb146267e3fd1abfdd838dfe740a6403c825.mp4#t=1" type="video/mp4" poster="./images/live-chat/website.jpg")
+                    video.video(src="./images/video/target.mp4" poster="./images/live-chat/website.jpg")
                   .target-bg
         .collaborate.section 
           .h6 collaborate
@@ -160,7 +163,7 @@ block content
         .slick-for 
           .slider 
             .browser
-              video(width="650", src="https://marketing.intercomassets.com/assets/acquire/breakdown/mv3/visitor-auto-messages-2x-21240fb2afa7286e438a5135dade0c4e7a8e681df9a07f7ea7c97a21164dbb0f.mp4#t=1", poster="./images/live-chat/visitor-auto-messages.jpg")
+              video.video(width="650", src="./images/video/visitor-auto-messages.mp4#", poster="./images/live-chat/visitor-auto-messages.jpg")
             .slider-text 
               h3.h2 Invite conversation
               p Be personal and grab attention by showing the faces of your teammates.
@@ -186,13 +189,13 @@ block content
               h3.h2 Have live conversations
               p Typing indicators, read receipts, and sounds bring conversations to life.
             .browser
-              video(width="650", src="https://marketing.intercomassets.com/assets/acquire/breakdown/mv3/real-time-2x-fd2636ee61334999b76ba75c7a935e1dcf18ae2ead426c3ac93df79601b22c87.mp4#t=1", poster="./images/live-chat/visitor-auto-messages.jpg")
+              video.video(width="650", src="./images/video/real-time.mp4", poster="./images/live-chat/visitor-auto-messages.jpg")
           .slider.left
             .slider-text
               h3.h2 Express yourself
               p Inject life into your conversations. Why type it when you can show it.
             .browser 
-              video(width="650", src="https://marketing.intercomassets.com/assets/acquire/breakdown/mv3/sticker-emoji-gifs-2x-967beb8ad87edeafc0336ac45f3379bbe84400d036352a50b41bd293434c4bd6.mp4#t=1", poster="./images/live-chat/sticker-emoji-gifs.jpg")
+              video.video(width="650", src="./images/video/sticker-emoji-gifs.mp4", poster="./images/live-chat/sticker-emoji-gifs.jpg")
       .respond.section
         .respond-bg
         h2.h1 Respond better and faster in a shared team inbox
@@ -208,7 +211,7 @@ block content
         .slick-for 
           .slider 
             .browser
-              video(width="650", src="https://marketing.intercomassets.com/assets/acquire/breakdown/live-profiles-2x-eecc6830c0801f7e42e70a3055f5d5a4ebc9f3d0eda2ffb324e65be1506acd39.mp4#t=1", poster="./images/live-chat/live-profiles.png")
+              video.video(width="650", src="./images/video/live-profiles.mp4", poster="./images/live-chat/live-profiles.png")
             .slider-text
               h3.h2 Know who you're talking to
               p See a live profile for every visitor that starts a conversation—where they are, the last page they visited, and more.
@@ -333,9 +336,9 @@ block content
     .bottom-form.p20
       .trial-form
           h2.h1.tx-red Try it free for 14 days
-          form(actions="")
+          form.get-started(actions="")
             .clearfix.home-form
-              input(type="text", name="", placeholder="Enter your emial")
+              input.email(type="text", name="", placeholder="Enter your emial")
               button.btn.btn-primary(type="submit") Get Started
           span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
           .quote-box.join

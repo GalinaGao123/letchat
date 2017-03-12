@@ -16,9 +16,18 @@ $(function () {
     ]
   })
 
-  $('.customers-words .carousel')
-  .on('beforeChange', function (_event, _slick, _current, next) {
+  $('.customers-words .carousel').on('beforeChange', function (_event, _slick, _current, next) {
     $('.customers-words .globe img').attr('src', `./images/customers/globe-${next + 1}.gif`)
   })
 
+  // filter 
+  $('.filter').on('change', 'input', function(){
+    const onbording = $('input.onbording').is(':checked')
+    const support = $('input.support').is(':checked')
+    const $contents = $('[data-filter]')
+
+    if (!onbording && !support) {
+      $contents.show()
+    }
+  })
 })

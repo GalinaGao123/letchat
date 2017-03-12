@@ -24,6 +24,7 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
+    "filterizr": "^1.2.4",
     "jquery": "^2.1.4"
   }
 }

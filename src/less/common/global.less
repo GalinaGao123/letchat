@@ -227,14 +227,17 @@ body {
     width: 60%;
     padding: 16px 15px 14px;
     border: 1px solid @light-grey;
+    border-right: none;
     line-height: normal;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    &.error { border-color: @red; }
   }
   .btn-primary {
     width: 40%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    outline: none;
   }
 
   @media (max-width: 580px) {

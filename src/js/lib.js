@@ -1,3 +1,3 @@
-window.$ = require('jquery')
+window.jQuery = window.$ = require('jquery')
 
 import 'lib/slick'

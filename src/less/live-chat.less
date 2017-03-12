@@ -5,6 +5,62 @@
 .live-chat {
 
   .join-info { color: #8da2b5; }
+
+  .banner-video {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .close-btn {
+      cursor: pointer;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 10px;
+      right: 10px;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        display: block;
+        margin-top: -1px;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        transform-origin: center center;
+        transform: rotateZ(45deg);
+      }
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        display: block;
+        margin-top: -1px;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        transform-origin: center center;
+        transform: rotateZ(-45deg);
+      }
+
+    }
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 86%;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+  }
   .banner {
     position: relative;
     box-sizing: border-box;
@@ -43,6 +99,7 @@
       margin-top: 28px;
       letter-spacing: 0.04em;
       color: @blue;
+      cursor: pointer;
       padding-left: 30px;
       position: relative;
 
