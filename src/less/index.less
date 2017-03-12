@@ -39,7 +39,7 @@
       max-width: 480px;
       color: @blue;
       margin: 0 -50px 50px 0;
-      .medium ({
+      .medium({
         max-width: 420px;
         margin: 20px auto 50px;
       });
@@ -89,7 +89,7 @@
 
     }
 
-    .medium ({
+    .medium({
       display: block;
 
       .way {
@@ -98,13 +98,19 @@
     });
 
   }
+
+  .home-form {
+    .medium({ margin-bottom: 40px; });
+  }
+  
   .form-desc {
     margin-top: 15px;
     font-size: 12px;
     color: #8da2b5;
     display: inline-block;
 
-    .medium({ margin-bottom: 40px; })
+    .medium({ margin-bottom: 40px; });
+    .small({ display: none; })
   }
   .title {
     display: flex;
@@ -336,7 +342,7 @@
   .free-trial {
     margin-top: 80px;
     background: url(../images/index/bg-3.jpg) no-repeat 50% 100px;
-    background-size: 1400px 100%;
+    background-size: 100% 100%;
     box-sizing: border-box;
     padding: 0 20px 100px;
 

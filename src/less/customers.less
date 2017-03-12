@@ -68,39 +68,37 @@
 
   .customers-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-
-    > * {
-      margin-top: 75px;
-      .medium({
-        margin-top: 40px;
-        });
-    }
-
+    margin: 0 -35px;
+    .tablet({ margin: 0 -20px; });
     .customer-card {
-      position: relative;
-      display: block;
-      width: 30%;
-      padding: 30px 30px 70px;
+      width: 33.33%;
+      padding: 70px 35px 0;
       box-sizing: border-box;
-      border: 1px solid @light-grey;
-      border-radius: 6px;
       color: @grey;
-      transition: all .3s;
-      &:hover {
-        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25);
-        .overlay {
-          opacity: 1;
-          transform: translateY(0);
+
+      .tablet({ padding: 40px 20px 0});
+      .medium({ width: 50%; });
+      .small({ width: 100%; });
+
+      a {
+        border: 1px solid @light-grey;
+        box-sizing: border-box;
+        padding: 30px 30px 70px;
+        border-radius: 6px;
+        display: block;
+        position: relative;
+        transition: all .3s;
+        height: 100%;
+        
+        &:hover {
+          box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25);
+          .overlay {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
       }
-      .medium({
-        width: 47%;
-        });
-      .small({
-        width: 100%;
-        });
 
       .photo {
         display: block;
@@ -153,7 +151,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 60%;
+      width: 66.66%;
       background-image: url("../images/customers/story-bg.jpg");
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -162,8 +160,7 @@
       box-sizing: border-box;
       .medium({
         width: 100%;
-        padding: 0;
-        order: 1;
+        padding: 40px 20px 0;
         });
 
       .logo {
@@ -211,7 +208,7 @@
       width: 100%;
       padding: 40px 0;
       .medium({
-        order: 1;
+        padding: 60px 0;
         });
 
       img {
@@ -240,21 +237,24 @@
   .customers-words {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 80px;
 
     .carousel {
       position: relative;
-      width: 65%;
-      padding: 20px 100px 0;
+      width: 560px;
+      margin-left: 150px;
+      padding-top: 20px;
       box-sizing: border-box;
       background: url('../images/customers/quote-bg.png') no-repeat;
       background-size: 200px;
       background-position: 50px 0;
-      .medium({
+      @media (max-width: 1000px) {
         width: 100%;
-        padding: 0;
-        background-position: 0 0;
-        });
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
 
       &-item {
         outline: none;
@@ -265,8 +265,6 @@
         }
 
         p {
-          font-size: 30px;
-          font-weight: 300;
           color: @dark-blue;
           margin: 0;
           .medium({
@@ -290,13 +288,21 @@
         &:hover { border-color: #637280; }
 
         &.slick-prev {
-          left: 0;
+          left: -110px;
           transform: rotate(-45deg);
+
+          @media (max-width: 1000px) {
+            left: -20px;
+          }
         }
 
         &.slick-next {
-          right: 0;
+          right: -110px;
           transform: rotate(135deg);
+
+          @media (max-width: 1000px) {
+            right: -20px;
+          }
         }
       }
 
@@ -320,13 +326,15 @@
 
     .globe {
       position: relative;
-      width: 35%;
+      right: -60px;
+      flex: 0 0 auto;
+      width: 475px;
       height: 210px;
       background: url('../images/customers/globe-bg.png') no-repeat;
       background-size: cover;
-      .medium({
+      @media (max-width: 1000px) {
         display: none;
-        });
+      }
 
       .arrow {
         position: absolute;
@@ -339,7 +347,9 @@
       }
 
       img {
-        margin-left: 21.5%;
+        position: absolute;
+        top: 0;
+        left: 101px;
       }
     }
   }

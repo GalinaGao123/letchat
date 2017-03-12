@@ -65,6 +65,8 @@
     position: relative;
     box-sizing: border-box;
     padding: 0 20px;
+    max-width: 1404px;
+    margin: 0 auto;
     text-align: right;
     min-height: 430px;
     img {
@@ -224,6 +226,8 @@
     text-align: center;
     margin-top: 60px;
     overflow: hidden;
+    max-width: 1404px;
+    margin: 0 auto;
 
     .welcome {
       margin-top: 50px;
@@ -554,26 +558,29 @@
     .follow-up {
       box-sizing: border-box;
       padding: 60px 0;
-      background: url(../images/live-chat/green-cat.jpg) no-repeat -550px 300px;
-      background-size: 1550px;
-      @media (max-width: 1350px) {
-        background-position: -350px 300px;
+      position: relative;
+
+      .follow-bg {
+        position: absolute;
+        background: url(../images/live-chat/green-cat.jpg) no-repeat center 300px;
+        background-size: 1550px;
+        position: absolute;
+        margin-left: -550px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @media (max-width: 1350px) { margin-left: -350px; }
+        @media (max-width: 1000px) { margin-left: -150px; }
+        .medium({
+          height: 320px;
+          position: initial;
+          background: url(../images/live-chat/green-cat-md.jpg) no-repeat center bottom;
+          background-size: 767px;
+          margin: 0;
+        });
       }
-
-      @media (max-width: 1000px) {
-        background-position: -450px 300px;
-      }
-
-      .medium({
-        padding-bottom: 315px;
-        margin-bottom: 60px;
-        background-size: 1000px;
-        background-position: -100px bottom;
-      });
-
-      .small({
-        background-position: -205px bottom;
-      });
     }
 
     .unified-detail {
@@ -608,6 +615,8 @@
 
   .acquire-quote {
     position: relative;
+    max-width: 1404px;
+    margin: 0 auto;
     .tablet({
       padding: 115px 0;
     });
@@ -1018,7 +1027,7 @@
     box-sizing: border-box;
     padding-top: 115px;
     background: url(../images/live-chat/circle-xlg.jpg) no-repeat center top;
-    background-size: 1400px 1150px;
+    background-size: 100% 1150px;
 
     .bottom-bg {
       height: 509px;

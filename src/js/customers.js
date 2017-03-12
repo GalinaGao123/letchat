@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 $(function () {
 
   $('.customers-words .carousel').slick({
@@ -22,12 +24,25 @@ $(function () {
 
   // filter 
   $('.filter').on('change', 'input', function(){
-    const onbording = $('input.onbording').is(':checked')
-    const support = $('input.support').is(':checked')
-    const $contents = $('[data-filter]')
+    const filters = $('.filter input:checked').map(function () {
+      return $(this).data('filter')
+    }).get()
 
-    if (!onbording && !support) {
-      $contents.show()
+    if (!filters.length) {
+      $('[data-category]').fadeIn()
+      return
     }
+    
+    $('[data-category]').each(function(){
+      const category = $(this).data('category')
+                              .split(',')
+                              .map(c => c.trim())
+
+      if (_.intersection(filters, category).length) {
+        $(this).fadeIn()
+      } else {
+        $(this).fadeOut()
+      }
+    })
   })
 })

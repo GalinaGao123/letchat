@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "filterizr": "^1.2.4",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "lodash": "^4.17.4"
   }
 }
