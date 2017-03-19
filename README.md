@@ -5,8 +5,9 @@
 - [LiveChat](https://guoxiangke.github.io/letchat/live-chat.html)
 - [Customers](https://guoxiangke.github.io/letchat/customers.html)
 - [Docs](https://guoxiangke.github.io/letchat/docs.html)
-- [DocsDetail](https://guoxiangke.github.io/letchat/doc-detail.html)
+- [DocsDetail](https://guoxiangke.github.io/letchat/doc-details.html)
 - [Demo](https://guoxiangke.github.io/letchat/demos.html)
+- [Princing](https://guoxiangke.github.io/letchat/price.html)
 
 
 ### 项目看板
