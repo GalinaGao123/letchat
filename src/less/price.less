@@ -5,6 +5,11 @@
 .price {
   box-sizing: border-box;
   padding-top: 80px;
+  background: url(../images/price/price-bg.jpg) no-repeat center -70px;
+  background-size: 2450px 450px;;
+  @media (max-width: 1440px) {
+    background-size: 1400px 450px;
+  }
   .small({ padding-top: 40px;});
 
   &-container {
@@ -33,13 +38,13 @@
     .medium({ padding: 24px; height: 300px; });
     
     &.box1 {
-      background: url(../images/price/box-1.png) no-repeat 94% bottom;
+      background: #fff url(../images/price/box-1.png) no-repeat 94% bottom;
       background-size: contain;
       .medium({ background-size: 75%; });
       .small({ background-size: contain; });
     }
     &.box2 {
-      background: url(../images/price/box-2.png) no-repeat 94% bottom;
+      background: #fff url(../images/price/box-2.png) no-repeat 94% bottom;
       background-size: contain;
       .medium({ background-size: 75%; });
       .small({ background-size: contain; });
