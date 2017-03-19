@@ -52,6 +52,8 @@
       .medium({
         max-width: 420px;
         margin: 100px auto 20px;
+        box-sizing: border-box;
+        padding: 0 20px;
       })
     }
     .way {
@@ -67,7 +69,9 @@
           padding: 0 0 65px;
           background: url(../images/index/bg-4.jpg) no-repeat center bottom;
           background-size: auto 350px;
-        })
+        });
+
+        .small({ background-size: auto 298px; });
       }
 
       &.old-way {
@@ -288,11 +292,14 @@
       box-sizing: border-box;
       padding: 35px 20px 0 110px;
       position: relative;
+      .small({ padding: 40px 0 0; });
+
       img {
         position: absolute;
         width: 361px;
         top: 0;
         left: 0;
+        .small({ width: 227px; left: 50%; transform: translate(-50%, 0); });
       }
       .text-box {
         box-sizing: border-box;
@@ -308,6 +315,8 @@
           display: flex;
           align-items: center;
           font-weight: 500;
+          position: relative;
+          z-index: 2;
         }
       }
       .text { margin-bottom: 20px; }

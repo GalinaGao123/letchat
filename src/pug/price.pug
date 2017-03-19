@@ -1,0 +1,87 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/price.css")
+
+block content
+  .price
+    .price-container 
+      .h6  Four products, one platform
+      .bundle
+        h1.h1 Start with a bundle
+        .price-box.box1
+          .box-title 
+            img(src="./images/header/acquire.svg")
+            img(src="./images/header/engage.svg")
+            img(src="./images/header/search-icon.svg")
+            img(src="./images/header/question-icon.svg")
+            span  All Intercom products
+          .box-info 
+            | from 
+            span.line-through $200 
+            |  $100 / month
+          .box-text Everything you need to communicate with your customers.
+          .box-btn
+            .btn.btn-primary View Pricing   
+        .price-box.box2
+          .box-title 
+            img(src="./images/header/search-icon.svg")
+            span.purple
+            img(src="./images/header/question-icon.svg")
+            span  Support Solution
+          .box-info from $98 / month
+          .box-text Support customers with an integrated knowledge base and help desk.
+          .box-btn
+            .btn.btn-primary View Pricing   
+      .product
+        h1.h1 Start with one product
+        .info.h5 Try any product free for 14 days
+        .product-grid
+          .grid-box
+            .price-box 
+              .box-title 
+                img(src="./images/header/acquire.svg")
+                span.red Acquire 
+              .box-info from $49 / month 
+              img.box-img(src="./images/price/grid-1.png")
+              .box-text Chat with website visitors in real-time and continue conversations by email
+              .box-btn
+                .btn.btn-primary View Pricing
+          .grid-box
+            .price-box 
+              .box-title 
+                img(src="./images/header/engage.svg")
+                span.yellow Engage
+              .box-info from $53 / month 
+              img.box-img(src="./images/price/grid-2.png")
+              .box-text Onboard and retain customers with targeted email and in-app messages
+              .box-btn
+                .btn.btn-primary View Pricing
+          .grid-box
+            .price-box 
+              .box-title 
+                img(src="./images/header/search-icon.svg")
+                span.purple Educate
+              .box-info $49 / month flat rate 
+              img.box-img(src="./images/price/grid-3.png")
+              .box-text Let customers help themselves with a knowledge base that constantly improves
+              .box-btn
+                .btn.btn-primary View Pricing
+          .grid-box
+            .price-box 
+              .box-title 
+                img(src="./images/header/question-icon.svg")
+                span.purple Resolve 
+              .box-info from $49 / month 
+              img.box-img(src="./images/price/grid-4.png")
+              .box-text Support customers via in-app chat, email, and social with a collaborative help desk
+              .box-btn
+                .btn.btn-primary View Pricing
+      .price-bottom 
+        .bottom-box
+          img.bottom-img.hidden-xs(src="./images/index/9.png")
+          img.bottom-img.visible-xs(width="227", src="./images/index/platform-sm.png")
+          .text-box
+            .text Or, start with the free Intercom platform. See who your customers are and what they do in your app, for free.
+            .more Learn More
+    
